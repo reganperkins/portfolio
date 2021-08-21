@@ -1,0 +1,17 @@
+@mixin linkPill($background, $color: $white) {
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+
+  &:link,
+  &:visited,
+  &:hover {
+    color: $color;
+  }
+
+  &:link {
+    background: $background;
+  }
+}
