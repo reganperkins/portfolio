@@ -2,31 +2,29 @@
 @import '../../styles/mixins';
 
 .appContainer {
-  max-width: 1250px;
-  margin: 0 auto;
+  overflow: hidden;
 }
 
 .header {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 70px;
+  margin-top: 75px;
 
   @media screen and (min-width: 700px) {
     flex-wrap: nowrap;
-    margin-top: 120px;
+    // margin-top: 120px;
   }
 }
 .headerContent,
 .headerImage {
   flex: 1 1 100%;
-
-  @media screen and (min-width: 700px) {
-    flex: 1 1 50%;
-  }
 }
 .headerContent {
-  margin-top: 100px;
-  margin-bottom: 300px;
+  margin: 100px 50px 300px 0;
+
+  @media screen and (min-width: 700px) {
+    flex: 1 1 45%;
+  }
 
   p {
     font-size: 18px;
@@ -36,14 +34,15 @@
 .headerImage {
   position: relative;
 
+  @media screen and (min-width: 700px) {
+    flex: 1 1 55%;
+  }
+
   img {
     position: absolute;
     bottom: 0;
     width: 900px;
   }
-}
-.sayHi {
-  @include linkPill($yellow);
 }
 .slug {
   font-weight: 800;

@@ -1,6 +1,7 @@
-import Nav from '../Nav/nav';
-import ImageListItem from '../ImageListItem/item';
-import Project from '../Project/project';
+import Nav from '../Nav';
+import ImageListItem from '../ImageListItem';
+import Project from '../Project';
+import WaveButton from '../WaveButton';
 import headerImage from './assets/placeholder.jpeg';
 import styles from "./app.module.scss"
 
@@ -15,7 +16,7 @@ function App() {
           <h1>Regan Little</h1>
           <p>(n.) /Ray-gun/</p>
           <p>defn. a Senior Frontend Engineer who is passionate about building beautiful, performant, and accessible applications. Always curious and in love with the challenge of learning new technologies —I enjoy writing clean, concise, functional code that provides the best user experience possible.</p>
-          <a href="#contact" className={styles.sayHi}>Say hi</a>
+          <WaveButton/>
         </div>
         <div className={styles.headerImage}>
           <img src={headerImage} alt="Temp header" />

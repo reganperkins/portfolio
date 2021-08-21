@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+@keyframes wave {
+  0%,60%,to {
+    transform: rotate(0deg)
+  }
+
+  10%,30% {
+      transform: rotate(14deg)
+  }
+
+  20% {
+      transform: rotate(-8deg)
+  }
+
+  40% {
+      transform: rotate(-4deg)
+  }
+
+  50% {
+      transform: rotate(10deg)
+  }
+}
+
+.sayHi {
+  position: relative;
+  display: inline-flex;
+  margin-top: 1rem;
+  margin-left: 35px;
+  @include linkPill($purpleAlt);
+}
+
+.hand {
+  position: absolute;
+  left: -40%;
+  top: -5px;
+  width: 3rem;
+  height: 3rem;
+  animation: wave 2000ms infinite;
+  transform-origin: bottom;
+}
