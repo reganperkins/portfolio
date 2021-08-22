@@ -5,6 +5,8 @@ import Project from '../Project';
 import WaveButton from '../WaveButton';
 import headerImage from './assets/placeholder.jpeg';
 import styles from "./app.module.scss"
+import { ReactComponent as Blob } from './assets/blob.svg';
+import { ReactComponent as StaticCircles } from './assets/static-circles.svg';
 
 function App() {
   return (
@@ -13,14 +15,14 @@ function App() {
       <div className={styles.appContainer}>
 
         <header className={styles.header}>
-          <div className={styles.headerContent}>
+          <div className={`${styles.headerContent} half`}>
             <p className={styles.slug}>Hello. This is</p>
             <h1>Regan Little</h1>
             <p>(n.) /Ray-gun/</p>
             <p>defn. a <strong>Senior Frontend Engineer</strong> who is passionate about building beautiful, performant, and accessible applications. Always curious and in love with the challenge of learning new technologies —I enjoy writing clean, concise, functional code that provides the best user experience possible.</p>
             <WaveButton/>
           </div>
-          <div className={styles.headerImage}>
+          <div className={`${styles.headerImage} half`}>
             <img src={headerImage} alt="Temp header" />
           </div>
         </header>
@@ -40,19 +42,21 @@ function App() {
           <a href="https://github.com/reganperkins">View more</a>
         </section>
 
-        <section id="contact">
-          <h2>Lets talk</h2>
-          <div>
-            Image
-            reganllittle@gmail.com
-            604 992 7526
+        <section id="contact" className="flex">
+          <div className={`${styles.contactArtboard} half`}>
+            <div className={styles.bgTriangle}></div>
+            {/* <StaticCircles /> */}
           </div>
-          <div>
+          <div className="half">
+            <h2>Lets talk</h2>
             <p>I'd love to hear from you</p>
-            <form>
+            <a href="mailto:reganllittle@gmail.com">reganllittle@gmail.com</a>
+            <a href="tel:+1-604-992-7526">604 992 7526</a>
+            <form className={styles.contactForm}>
               <input type="text" placeholder="Name"></input>
               <input type="email" placeholder="Email"></input>
-              <textarea placeholder="Message"></textarea>
+              <textarea rows={5} placeholder="Message"></textarea>
+              <button>Send Message</button>
             </form>
           </div>
         </section>
