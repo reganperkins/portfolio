@@ -1,10 +1,16 @@
-// list item for the about section
+import styles from "./styles.module.scss"
 
-function Item() {
+interface ItemProp {
+  title: string;
+  description: string;
+}
+
+function Item(props: ItemProp) {
   return (
-    <div>
-      item
-    </div>
+    <li className={styles.container}>
+      <h3>{ props.title }</h3>
+      <p>{ props.description }</p>
+    </li>
   );
 }
 
