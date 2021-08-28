@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.subTitle {
+  margin-top: 0px;
+  font-weight: 600;
+  color: $purple;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 75px;
+
+  @media screen and (min-width: 700px) {
+    flex-wrap: nowrap;
+  }
+}
+.headerContent {
+  margin: 100px 100px 300px 50px;
+  z-index: 1;
+}
+
+.headerImage {
+  position: relative;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    width: 900px;
+  }
+}
+
+.slug {
+  font-weight: 800;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+
+.contactArtboard {
+  position: relative;
+  overflow: hidden;
+}
+
+.bgTriangle{
+  position: absolute;
+  left: -50px;
+  width: 500px;
+  height: 1000px;
+  background: linear-gradient(to top left, #fff 0%, #fff 50%, #F3FBFE 50%, #F3FBFE 100%);
+}
+
+.contactForm {
+  max-width: 450px;
+  margin-bottom: 42px;
+}
