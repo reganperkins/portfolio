@@ -1,24 +1,23 @@
 
 import GridItem from './grid-item'
-import styles from './styles.module.scss'
 
 interface ProjectProp {
   title: string;
   imageName: string;
   description?: string;
+  containerClass?: string;
   topics: { title: string; description: string; }[];
 }
 
 function Project(props: ProjectProp) {
 
   return (
-    <div className={`${styles.projectContainer} section-padding`}>
-    <img src={`/images/projects/${props.imageName}`} className="half" alt={props.title} />
-      <div className="projectContent half">
+    <div className={`${props.containerClass} project-container section-padding`}>
+      <div className="project-content">
         <h3>{ props.title }</h3>
         <p>{ props.description }</p>
 
-        <div className={styles.grid}>
+        <div className="project-grid">
           {props.topics.map((topic) =>
             <GridItem
               title={topic.title}
@@ -27,6 +26,7 @@ function Project(props: ProjectProp) {
           )}
         </div>
       </div>
+      <img src={`/images/projects/${props.imageName}`} className="project-image" alt={props.title} />
     </div>
   );
 }

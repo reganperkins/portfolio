@@ -46,10 +46,58 @@ function App() {
 
         <section id="work">
           <h2 className="section-padding">Achievements</h2>
+
+          <Project 
+            title="Update Navigation"
+            description=""
+            imageName="nav.png"
+            containerClass="hero-section"
+            topics={[
+              {
+                title: 'Easily surface information',
+                description: 'Quick access to the profile, highlighting hiring platforms and job listings, adding quick search.'
+              },
+              {
+                title: 'Better data analytics',
+                description: 'Leveraging Iteratively to better understand our users in order tailor a better experience.'
+              },
+              {
+                title: 'Increased click through rate',
+                description: 'Driving traffic to revenue generating pages and surface the pages users want.'
+              },
+            ]}
+          />
+
+          <Project 
+            title="Modernizing"
+            description="Dribbble is a ten year old Rails app. In the time I have been here we have made massive gains in feature release cadence, increasing code clarity and onboarding new developers"
+            imageName="login.png"
+            containerClass="right-section"
+            topics={[
+              {
+                title: 'Storybook',
+                description: 'Building UI components and pages in isolation makes it easier to QA, add new behavior after a component has been made, and develop without interference.'
+              },
+              {
+                title: 'Tooling',
+                description: 'I set up our Eslint, Prettier, and increased usage of tools like Bundle Wizard and Lighthouse which have made our site more preferment and code consistent.'
+              },
+              {
+                title: 'Vue',
+                description: 'Vue has made our development easier with the addition of a component library that matches our design system, better testing tools, built in reactivity and easy readability.'
+              },
+              {
+                title: 'Developer guide',
+                description: 'Created our internal development guide which helps onboard new users. It outlines important concepts like lazyloading, responsive images, using scoped styles and patterns for testing.'
+              },
+            ]}
+          />
+
           <Project 
             title="Dribbble 1.5"
             description="A completely new look for Dribbble, this was a massive under takeing with a fairly tight deadline. It involved working closely with many parties including project managers, leadership and the design team to plan and execute."
             imageName="dribbble-1-5.png"
+            containerClass="left-section"
             topics={[
               {
                 title: 'First major update in 10 years',
@@ -62,87 +110,109 @@ function App() {
             ]}
           />
 
-          {/* <div className="flex">
-            <img src={`/images/projects/dribbble-1-5.png`} alt="reskin" />
-            <div>
-              <h3>Dribbble 1.5</h3>
-              <p>
-                A completely new look for Dribbble, this was a massive under takeing with a fairly 
-                tight deadline. It involved working closely with many parties including project managers, 
-                leadership and the design team to plan and execute.
-              </p>
+          <Project 
+            title="Designer Search"
+            description="One of Dribbbles bigger projects and one I was lead on. This turned out to be one of the biggest revenue streams for Dribbble; helping our users find the perfect fit for their company."
+            imageName="login.png"
+            containerClass="right-section"
+            topics={[
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+            ]}
+          />
 
-              <div className="grid">
-                <div className="grid-item">
-                  <h4>First major update in 10 years</h4>
-                  <p>
-                    We updated all our color schemes, form elements, icons, as well as our default padding, 
-                    margins, and basic elements. Because we needed to launch this all at once we used a 
-                    webpack-level feature flag to keep showing the old styles well building the new.
-                  </p>
-                </div>
-                <div className="grid-item">
-                  <h4>A shared ecosystem</h4>
-                  <p>
-                    Previous to the re-skin Dribbble did not have a set design system. This meant that
-                    every time a dropdown was needed there was a good chance a new one would be created. In order
-                    to put an end to the madness and ensure that design and engineering where in sync we worked 
-                    to create a shared design system and component library. This has since greatly improved our
-                    development time and cohesiveness of our site.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> */}
+          <Project 
+            title="Job Board"
+            description=""
+            imageName="job-board.jpeg"
+            containerClass="left-section"
+            topics={[
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+            ]}
+          />
 
-          <div className="flex section-padding">
-            <div>
-              <h3>Modernizing</h3>
-              <p></p>
+          <Project 
+            title="Workshops"
+            description=""
+            imageName="learn.png"
+            containerClass="right-section"
+            topics={[
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+            ]}
+          />
 
-              <div className="grid">
-                <div className="grid-item">
-                  <h4>Storybook</h4>
-                  <p></p>
-                </div>
-                <div className="grid-item">
-                  <h4>Vue</h4>
-                  <p></p>
-                </div>
-                <div className="grid-item">
-                  <h4>Style guide</h4>
-                  <p>lazyloading, responsive images, css audit, webpack</p>
-                </div>
-                <div className="grid-item">
-                  <h4></h4>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <img src={`/images/projects/new-dribbble.jpeg`} alt="reskin" />
-          </div>
+          <Project 
+            title="Login"
+            description=""
+            imageName="login.png"
+            containerClass="left-section"
+            topics={[
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+              {
+                title: '',
+                description: ''
+              },
+            ]}
+          />
+
 
           {/* <Project 
             title="performance optimizations"
-          /> */}
-          {/* <Project 
-            title="designer search"
-          /> */}
-          {/* <Project 
-            title="nav"
-            imageName="nav.png"
-          /> */}
-          {/* <Project 
-            title="workshops"
-            imageName="learn.png"
-          /> */}
-          {/* <Project 
-            title="login"
-            imageName="login.png"
-          /> */}
-          {/* <Project 
-            title="job board"
-            imageName="job-board.jpeg"
           /> */}
           {/* <Project 
             title="marketplace ...coming soon"

@@ -1,5 +1,4 @@
 
-import styles from './styles.module.scss'
 interface ProjectProp {
   title: string;
   description: string;
@@ -7,7 +6,7 @@ interface ProjectProp {
 
 function Project(props: ProjectProp) {
   return (
-    <div className={styles.gridItem}>
+    <div>
       <h4>{props.title}</h4>
       <p className="smallBody">{props.description}</p>
     </div>
