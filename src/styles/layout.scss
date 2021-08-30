@@ -11,8 +11,6 @@
 .left-section,
 .right-section {
   &.project-container {
-    // display: grid;
-    // gap: 48px;
     display: flex;
     align-items: flex-start;
   }
