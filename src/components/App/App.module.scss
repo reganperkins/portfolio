@@ -58,3 +58,24 @@
 .sectionTitle {
   margin-bottom: 64px;
 }
+
+.modernizingProject {
+  .blob {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    fill: $blue;
+  }
+}
+
+.dribbbleProject {
+  .blob {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    fill: $yellow;
+    transform: scale(-1, 1);
+  }
+}

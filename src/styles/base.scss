@@ -41,6 +41,7 @@ h3 {
 }
 
 h4 {
+  margin: 0;
   font-size: 1.3rem;
 }
 
@@ -98,6 +99,10 @@ ul {
 
 .flex {
   display: flex;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .block {

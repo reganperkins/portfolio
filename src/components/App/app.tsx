@@ -5,6 +5,7 @@ import Project from '../project/Project';
 import WaveButton from '../wave-button/WaveButton';
 import headerImage from './assets/placeholder.jpeg';
 import styles from "./App.module.scss";
+import { ReactComponent as BlobSlant } from './assets/blob-slant.svg';
 import { ReactComponent as Blob } from './assets/blob.svg';
 import { ReactComponent as StaticCircles } from './assets/static-circles.svg';
 
@@ -48,13 +49,12 @@ function App() {
         </section>
 
         <section id="work">
-          <h2 className={`section-padding ${styles.sectionTitle}`}>Achievements</h2>
+          <h2 className="section-padding">Achievements</h2>
 
           <Project 
             title="Modernizing"
             description="Dribbble is a ten year old Rails app. In the time I have been here we have made massive gains in feature release cadence, increasing code clarity and onboarding new developers"
-            imageName="login.png"
-            containerClass="right-section"
+            containerClass={`right-section ${styles.modernizingProject}`}
             topics={[
               {
                 title: 'Storybook',
@@ -73,13 +73,18 @@ function App() {
                 description: 'I helped to create our internal development guide which helps onboard new users. It outlines important concepts like lazyloading, responsive images, using scoped styles and patterns for testing.'
               },
             ]}
-          />
+          >
+            <div className="project-display">
+              <img src="/images/projects/login.png" className="full-width" alt="A new, modernized developer experience" />
+              <BlobSlant className={styles.blob}/>
+            </div>
+          </Project>
+          
 
           <Project 
             title="Dribbble 1.5"
             description="A completely new look for Dribbble, this was a massive under takeing with a fairly tight deadline. It involved working closely with many parties including project managers, leadership and the design team to plan and execute."
-            imageName="dribbble-1-5.png"
-            containerClass="left-section"
+            containerClass={`left-section ${styles.dribbbleProject}`}
             topics={[
               {
                 title: 'First major update in 10 years',
@@ -90,12 +95,16 @@ function App() {
                 description: 'Previous to the re-skin Dribbble did not have a set design system. This meant that every time a dropdown was needed there was a good chance a new one would be created. In order to put an end to the madness and ensure that design and engineering where in sync I worked to create a shared design system and component library. This has since greatly improved our development time and cohesiveness of our site.',
               }
             ]}
-          />
+          >
+          <div className={`project-display`}>
+            <img src="/images/projects/dribbble-1-5.png" className="full-width" alt="Stunning, clean and user friendly redesign of Dribbble" />
+            <BlobSlant className={styles.blob}/>
+          </div>
+        </Project>
 
           <Project 
             title="Marketplace ...coming soon"
-            description="Front-end lead on the biggest change to our "
-            imageName="marketplace.png"
+            description="Front-end lead on the biggest change to our marketplace ever"
             containerClass="right-section"
             topics={[
               {
@@ -115,12 +124,15 @@ function App() {
                 description: 'Our concept of shots and shots as a good is old highly coupled code. I took this opportunity to refactor and cleanup that logic.'
               },
             ]}
-          />
+            >
+            <div className={`project-display`}>
+              <img src="/images/projects/marketplace.png" className="full-width" alt="A new, modernized developer experience" />
+            </div>
+          </Project>
 
           <Project 
             title="Update Navigation"
             description=""
-            imageName="nav.png"
             containerClass="hero-section"
             topics={[
               {
@@ -136,12 +148,15 @@ function App() {
                 description: 'Driving traffic to revenue generating pages and surface the pages users want.'
               },
             ]}
-          />
+            >
+            <div className={`project-display`}>
+              <img src="/images/projects/nav.png" className="full-width" alt="A new, modernized developer experience" />
+            </div>
+          </Project>
 
           <Project 
             title="Designer Search"
             description="One of Dribbble's bigger projects and one I was lead on. This turned out to be one of the biggest revenue streams for Dribbble; helping our users find the perfect fit for their company."
-            imageName="designer-search.png"
             containerClass="right-section"
             topics={[
               {
@@ -157,12 +172,15 @@ function App() {
                 description: 'This design works flawlessly on desktop and mobile platforms and utilizes responsive images and lazyloading.'
               },
             ]}
-          />
+            >
+            <div className={`project-display`}>
+              <img src="/images/projects/designer-search.png" className="full-width" alt="A new, modernized developer experience" />
+            </div>
+          </Project>
 
           <Project 
             title="Job Board"
             description="Though a simple project I scoped, planned and created these pages and filters that showcase jobs relevant to our community."
-            imageName="job-board.png"
             containerClass="left-section"
             topics={[
               {
@@ -174,12 +192,15 @@ function App() {
                 description: 'Created param based filters to help users find the jobs they want.'
               },
             ]}
-          />
+            >
+            <div className={`project-display`}>
+              <img src="/images/projects/job-board.png" className="full-width" alt="A new, modernized developer experience" />
+            </div>
+          </Project>
 
           <Project 
             title="Workshops"
             description="A new addition to our revenue stream, Dribbble workshops are added frequently and we needed a solution that enabled us to quickly add new events without taking developer time to implement"
-            imageName="learn.png"
             containerClass="right-section"
             topics={[
               {
@@ -195,12 +216,15 @@ function App() {
                 description: 'Set up Eventbrite as an intermediary way of collecting payments well we build our own.'
               },
             ]}
-          />
+            >
+            <div className={`project-display`}>
+              <img src="/images/projects/learn.png" className="full-width" alt="A new, modernized developer experience" />
+            </div>
+          </Project>
 
           <Project 
             title="Login"
             description=""
-            imageName="login.png"
             containerClass="left-section"
             topics={[
               {
@@ -212,7 +236,11 @@ function App() {
                 description: 'With logins simplicity is key, the updated login and sign up pages are clear, clean and convenient'
               },
             ]}
-          />
+            >
+            <div className={`project-display`}>
+              <img src="/images/projects/login.png" className="full-width" alt="A new, modernized developer experience" />
+            </div>
+          </Project>
         </section>
 
         {/* <Project 

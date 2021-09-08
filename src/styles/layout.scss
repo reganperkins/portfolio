@@ -1,21 +1,14 @@
-.hero-section
-.left-section,
-.right-section {
-  margin-bottom: 64px;
-
-  h4 {
-    margin: 0;
-  }
+.project-container {
+  margin-bottom: 200px;
 }
 
 .left-section,
 .right-section {
   &.project-container {
     display: flex;
-    align-items: flex-start;
   }
   
-  .project-image,
+  .project-display,
   .project-content {
     flex: 1 1 100%;
 
@@ -23,12 +16,8 @@
       flex: 1 1 50%;
     }
   }
-
-  .project-content {
-    max-width: 600;
-  }
   
-  .project-image {
+  .project-display {
     min-width: 0;
   }
   
@@ -40,7 +29,7 @@
 }
 
 .right-section {
-  .project-image {
+  .project-display {
     margin-left: 64px;
   }
 }
@@ -48,7 +37,7 @@
 .left-section {
   flex-direction: row-reverse;
 
-  .project-image {
+  .project-display {
     margin-right: 64px;
   }
 }
@@ -57,7 +46,7 @@
   display: flex;
   flex-direction: column-reverse;
 
-  .project-image {
+  .project-display {
     width: 100%;
   }
 
@@ -66,4 +55,8 @@
     grid-template-columns: repeat(3, minmax(0,1fr));
     gap: 48px;
   }
+}
+
+.project-display {
+  position: relative;
 }

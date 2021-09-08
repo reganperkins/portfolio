@@ -3,10 +3,10 @@ import GridItem from './GridItem'
 
 interface ProjectProp {
   title: string;
-  imageName: string;
   description?: string;
   containerClass?: string;
   topics: { title: string; description: string; }[];
+  children?: JSX.Element | JSX.Element[];
 }
 
 function Project(props: ProjectProp) {
@@ -26,7 +26,7 @@ function Project(props: ProjectProp) {
           )}
         </div>
       </div>
-      <img src={`/images/projects/${props.imageName}`} className="project-image" alt={props.title} />
+      {props.children}
     </article>
   );
 }
