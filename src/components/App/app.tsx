@@ -6,8 +6,6 @@ import WaveButton from '../wave-button/WaveButton';
 import headerImage from './assets/placeholder.jpeg';
 import styles from "./App.module.scss";
 import { ReactComponent as BlobSlant } from './assets/blob-slant.svg';
-import { ReactComponent as Blob } from './assets/blob.svg';
-import { ReactComponent as StaticCircles } from './assets/static-circles.svg';
 
 function App() {
   return (
@@ -27,7 +25,7 @@ function App() {
           </div>
         </header>
 
-        <section id="about">
+        <section id="about" className={styles.sectionMargin}>
           <h2 className={`section-padding ${styles.sectionTitle}`}>My specialties</h2>
           <ul className="flex section-padding">
             <IconListItem
@@ -48,13 +46,13 @@ function App() {
           </ul>
         </section>
 
-        <section id="work">
+        <section id="work" className={styles.sectionMargin}>
           <h2 className="section-padding">Achievements</h2>
 
           <Project 
             title="Modernizing"
             description="Dribbble is a ten year old Rails app. In the time I have been here we have made massive gains in feature release cadence, increasing code clarity and onboarding new developers"
-            containerClass={`right-section ${styles.modernizingProject}`}
+            containerClass="right-section"
             topics={[
               {
                 title: 'Storybook',
@@ -76,15 +74,14 @@ function App() {
           >
             <div className="project-display">
               <img src="/images/projects/login.png" className="full-width" alt="A new, modernized developer experience" />
-              <BlobSlant className={styles.blob}/>
+              <BlobSlant className={`${styles.blob} ${styles.blue} ${styles.blobRight}`}/>
             </div>
           </Project>
           
-
           <Project 
             title="Dribbble 1.5"
             description="A completely new look for Dribbble, this was a massive under takeing with a fairly tight deadline. It involved working closely with many parties including project managers, leadership and the design team to plan and execute."
-            containerClass={`left-section ${styles.dribbbleProject}`}
+            containerClass="left-section"
             topics={[
               {
                 title: 'First major update in 10 years',
@@ -98,7 +95,7 @@ function App() {
           >
           <div className={`project-display`}>
             <img src="/images/projects/dribbble-1-5.png" className="full-width" alt="Stunning, clean and user friendly redesign of Dribbble" />
-            <BlobSlant className={styles.blob}/>
+            <BlobSlant className={`${styles.blob} ${styles.yellow} ${styles.blobLeft}`}/>
           </div>
         </Project>
 
@@ -127,6 +124,7 @@ function App() {
             >
             <div className={`project-display`}>
               <img src="/images/projects/marketplace.png" className="full-width" alt="A new, modernized developer experience" />
+              <BlobSlant className={`${styles.blob} ${styles.pink} ${styles.blobRight}`}/>
             </div>
           </Project>
 
@@ -175,6 +173,7 @@ function App() {
             >
             <div className={`project-display`}>
               <img src="/images/projects/designer-search.png" className="full-width" alt="A new, modernized developer experience" />
+              <BlobSlant className={`${styles.blob} ${styles.blue} ${styles.blobRight}`}/>
             </div>
           </Project>
 
@@ -195,6 +194,7 @@ function App() {
             >
             <div className={`project-display`}>
               <img src="/images/projects/job-board.png" className="full-width" alt="A new, modernized developer experience" />
+              <BlobSlant className={`${styles.blob} ${styles.yellow} ${styles.blobLeft}`}/>
             </div>
           </Project>
 
@@ -219,6 +219,7 @@ function App() {
             >
             <div className={`project-display`}>
               <img src="/images/projects/learn.png" className="full-width" alt="A new, modernized developer experience" />
+              <BlobSlant className={`${styles.blob} ${styles.pink} ${styles.blobRight}`}/>
             </div>
           </Project>
 
@@ -239,18 +240,14 @@ function App() {
             >
             <div className={`project-display`}>
               <img src="/images/projects/login.png" className="full-width" alt="A new, modernized developer experience" />
+              <BlobSlant className={`${styles.blob} ${styles.blue} ${styles.blobLeft}`}/>
             </div>
           </Project>
         </section>
 
-        {/* <Project 
-          title="marketplace ...coming soon"
-        /> */}
-
         <section id="contact" className="flex">
           <div className={`${styles.contactArtboard} half`}>
             <div className={styles.bgTriangle}></div>
-            {/* <StaticCircles /> */}
           </div>
           <div className="half">
             <h2>Lets talk</h2>

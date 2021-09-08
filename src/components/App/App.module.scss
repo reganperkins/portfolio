@@ -1,6 +1,11 @@
 @import '../../styles/variables';
 @import '../../styles/mixins';
 
+
+.sectionMargin {
+  margin-bottom: 164px;
+}
+
 .subTitle {
   margin-top: 0px;
   font-weight: 600;
@@ -16,18 +21,24 @@
     flex-wrap: nowrap;
   }
 }
+
 .headerContent {
   margin: 100px 100px 300px 50px;
   z-index: 1;
 }
 
 .headerImage {
+  display: none;
   position: relative;
 
   img {
     position: absolute;
     bottom: 0;
     width: 900px;
+  }
+
+  @media screen and (min-width: 800px) {
+    display: block;
   }
 }
 
@@ -59,23 +70,29 @@
   margin-bottom: 64px;
 }
 
-.modernizingProject {
-  .blob {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
+.blob {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+
+  &.yellow {
+    fill: $yellow;
+  }
+
+  &.blue {
     fill: $blue;
   }
-}
 
-.dribbbleProject {
-  .blob {
-    position: absolute;
-    bottom: 0;
+  &.pink {
+    fill: $pink;
+  }
+
+  &.blobRight {
+    left: 0;
+  }
+
+  &.blobLeft {
     right: 0;
-    z-index: -1;
-    fill: $yellow;
     transform: scale(-1, 1);
   }
 }
