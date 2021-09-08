@@ -28,7 +28,7 @@ function App() {
 
         <section id="about">
           <h2 className={`section-padding ${styles.sectionTitle}`}>My specialties</h2>
-          <ul className="flex">
+          <ul className="flex section-padding">
             <IconListItem
               imageName="front-end.svg"
               title="Front-end Architecture"
@@ -95,7 +95,7 @@ function App() {
           <Project 
             title="Marketplace ...coming soon"
             description="Front-end lead on the biggest change to our "
-            imageName="dribbble-1-5.png"
+            imageName="marketplace.png"
             containerClass="right-section"
             topics={[
               {
@@ -141,7 +141,7 @@ function App() {
           <Project 
             title="Designer Search"
             description="One of Dribbble's bigger projects and one I was lead on. This turned out to be one of the biggest revenue streams for Dribbble; helping our users find the perfect fit for their company."
-            imageName="login.png"
+            imageName="designer-search.png"
             containerClass="right-section"
             topics={[
               {
@@ -162,7 +162,7 @@ function App() {
           <Project 
             title="Job Board"
             description="Though a simple project I scoped, planned and created these pages and filters that showcase jobs relevant to our community."
-            imageName="job-board.jpeg"
+            imageName="job-board.png"
             containerClass="left-section"
             topics={[
               {
