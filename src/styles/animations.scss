@@ -14,10 +14,44 @@
   }
 }
 
+@keyframes fadeinup {
+  0% {
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px)
+  }
+
+  to {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+  }
+}
+
+.fade-in-up {
+  visibility: hidden;
+  animation: fadeinup 250ms linear forwards;
+}
+
+.fade-out-down {
+  animation: fadeinup 250ms linear reverse;
+}
+
 .fade-in-down {
+  visibility: hidden;
   animation: fadeindown 250ms linear forwards;
 }
 
 .fade-out-up {
   animation: fadeindown 250ms ease-in-out reverse;
+}
+
+.animation-delay-350 {
+  animation-delay: 350ms;
+}
+
+.animation-delay-450 {
+  animation-delay: 450ms;
 }

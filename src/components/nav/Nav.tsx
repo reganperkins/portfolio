@@ -3,7 +3,7 @@ import styles from "./Nav.module.scss"
 
 function Nav() {
   return (
-    <nav className="fade-in-down">
+    <nav className="fade-in-down animation-delay-350">
       <ul className={styles.navList}>
         <li>
           <a href="#about">About</a>

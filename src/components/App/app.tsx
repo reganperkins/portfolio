@@ -14,15 +14,15 @@ function App() {
       <Nav />
       <main>
         <header className={styles.header}>
-          <div className={`${styles.headerContent} half`}>
+          <div className={`${styles.headerContent} half fade-in-up animation-delay-350`}>
             <p className={styles.slug}>Hello. This is</p>
             <h1>Regan Little</h1>
             <p>(n.) /Ray-gun/</p>
             <p>defn. a <strong>Senior Front-end Engineer</strong> who is passionate about building beautiful, performant, and accessible applications. Always curious and in love with the challenge of learning new technologies —I enjoy writing clean, concise, functional code that provides the best user experience possible.</p>
             <WaveButton />
           </div>
-          <div className={`${styles.headerImage} half`}>
-            {/* <img src={headerImage} alt="Temp header" /> */}
+          <div className={`${styles.headerImage} half fade-in-down animation-delay-450`}>
+            <img src={headerImage} alt="Temp header" />
           </div>
         </header>
 

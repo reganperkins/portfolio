@@ -8,7 +8,7 @@ function Project(props: ProjectProp) {
   return (
     <div>
       <h4>{props.title}</h4>
-      <p className="smallBody">{props.description}</p>
+      <p className="small-body">{props.description}</p>
     </div>
   );
 }

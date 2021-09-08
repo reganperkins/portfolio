@@ -28,6 +28,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+  margin-top: 0;
   font-size: 3.3rem;
 }
 
@@ -91,6 +92,7 @@ button {
 }
 
 ul {
+  padding: 0;
   list-style: none;
 }
 
@@ -110,7 +112,7 @@ ul {
   }
 }
 
-.smallBody {
+.small-body {
   font-size: 1rem;
 }
 
