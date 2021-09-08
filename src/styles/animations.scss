@@ -1,0 +1,23 @@
+@keyframes fadeindown {
+  0% {
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px)
+  }
+
+  to {
+      visibility: visible;
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0)
+  }
+}
+
+.fade-in-down {
+  animation: fadeindown 250ms linear forwards;
+}
+
+.fade-out-up {
+  animation: fadeindown 250ms ease-in-out reverse;
+}

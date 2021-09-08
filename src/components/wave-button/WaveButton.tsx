@@ -1,4 +1,4 @@
-import styles from "./styles.module.scss"
+import styles from "./WaveButton.module.scss"
 import { ReactComponent as Hand } from './assets/hand.svg';
 
 function WaveButton() {

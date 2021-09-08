@@ -11,11 +11,13 @@ html {
 body {
   margin: 0;
   font-family: $fontPrimary;
+  font-display: optional;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
+  font-display: optional;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
@@ -120,4 +122,8 @@ p {
 .section-padding {
   max-width: 1300px;
   margin: 24px 48px;
+}
+
+section {
+  margin-bottom: 164px;
 }

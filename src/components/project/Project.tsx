@@ -1,5 +1,5 @@
 
-import GridItem from './grid-item'
+import GridItem from './GridItem'
 
 interface ProjectProp {
   title: string;
@@ -12,7 +12,7 @@ interface ProjectProp {
 function Project(props: ProjectProp) {
 
   return (
-    <div className={`${props.containerClass} project-container section-padding`}>
+    <article className={`${props.containerClass} project-container section-padding`}>
       <div className="project-content">
         <h3>{ props.title }</h3>
         <p>{ props.description }</p>
@@ -27,7 +27,7 @@ function Project(props: ProjectProp) {
         </div>
       </div>
       <img src={`/images/projects/${props.imageName}`} className="project-image" alt={props.title} />
-    </div>
+    </article>
   );
 }
 

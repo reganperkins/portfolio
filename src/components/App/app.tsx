@@ -1,10 +1,10 @@
 import React from 'react';
-import Nav from '../Nav';
-import ImageListItem from '../ImageListItem';
-import Project from '../Project';
-import WaveButton from '../WaveButton';
+import Nav from '../nav/Nav';
+import IconListItem from '../icon-list-item/IconListItem';
+import Project from '../project/Project';
+import WaveButton from '../wave-button/WaveButton';
 import headerImage from './assets/placeholder.jpeg';
-import styles from "./styles.module.scss";
+import styles from "./App.module.scss";
 import { ReactComponent as Blob } from './assets/blob.svg';
 import { ReactComponent as StaticCircles } from './assets/static-circles.svg';
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <React.Fragment>
       <Nav />
-      <div>
+      <main>
         <header className={styles.header}>
           <div className={`${styles.headerContent} half`}>
             <p className={styles.slug}>Hello. This is</p>
@@ -22,22 +22,25 @@ function App() {
             <WaveButton />
           </div>
           <div className={`${styles.headerImage} half`}>
-            <img src={headerImage} alt="Temp header" />
+            {/* <img src={headerImage} alt="Temp header" /> */}
           </div>
         </header>
 
         <section id="about">
-          <h2 className="section-padding">What do I do?</h2>
+          <h2 className={`section-padding ${styles.sectionTitle}`}>My specialties</h2>
           <ul className="flex">
-            <ImageListItem
+            <IconListItem
+              imageName="front-end.svg"
               title="Front-end Architecture"
               description="Architect efficient and reusable front-end systems that drive complex web applications"
             />
-            <ImageListItem
+            <IconListItem
+              imageName="brain.svg"
               title="Project Planning"
               description="Collaborate with Product Designers, Product Managers, and Software Engineers to deliver compelling user-facing products"
             />
-            <ImageListItem
+            <IconListItem
+              imageName="bolt.svg"
               title="Optimized Performance"
               description="Teaching teammates new strategies for better user performance Lazy Loading, responsive images, "
             />
@@ -45,7 +48,7 @@ function App() {
         </section>
 
         <section id="work">
-          <h2 className="section-padding">Achievements</h2>
+          <h2 className={`section-padding ${styles.sectionTitle}`}>Achievements</h2>
 
           <Project 
             title="Modernizing"
@@ -237,7 +240,7 @@ function App() {
             </form>
           </div>
         </section>
-      </div>
+      </main>
     </React.Fragment>
   );
 }
