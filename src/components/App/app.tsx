@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../nav/Nav';
 import IconListItem from '../icon-list-item/IconListItem';
 import Project from '../project/Project';
+import Projects from '../project/Projects';
 import WaveButton from '../wave-button/WaveButton';
 import headerImage from './assets/placeholder.jpeg';
 import styles from "./App.module.scss";
@@ -46,7 +47,9 @@ function App() {
           </ul>
         </section>
 
-        <section id="work" className={styles.sectionMargin}>
+        <Projects />
+
+        {/* <section id="work" className={styles.sectionMargin}>
           <h2 className="section-padding">Achievements</h2>
 
           <Project 
@@ -243,7 +246,7 @@ function App() {
               <img src="/images/projects/login.png" className={styles.projectDesktopImage} alt="A new, modernized developer experience" />
             </div>
           </Project>
-        </section>
+        </section> */}
 
         <section id="contact" className={styles.contact}>
           <div className={`${styles.contactArtboard} half`}>
