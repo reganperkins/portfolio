@@ -1,4 +1,4 @@
-
+import styles from "./Project.module.scss";
 import GridItem from './GridItem'
 
 interface ProjectProp {
