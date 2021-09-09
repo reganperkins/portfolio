@@ -1,7 +1,11 @@
 @import './variables';
 
 .project-container {
-  margin-bottom: 200px;
+  margin-bottom: 64px;
+
+  @media screen and (min-width: $breakpoint800) {
+    margin-bottom: 200px;
+  }
 }
 
 .left-section,
@@ -29,8 +33,12 @@
   
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
+    grid-template-columns: 1;
     gap: 24px 48px;
+
+    @media screen and (min-width: $breakpoint800) {
+      grid-template-columns: repeat(2, minmax(0,1fr));
+    }
   }
 }
 
@@ -68,8 +76,13 @@
 
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0,1fr));
+    grid-template-columns: 1;
     gap: 48px;
+
+
+    @media screen and (min-width: $breakpoint800) {
+      grid-template-columns: repeat(3, minmax(0,1fr));
+    }
   }
 }
 
