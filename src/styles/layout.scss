@@ -21,6 +21,10 @@
   
   .project-display {
     min-width: 0;
+
+    img {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    }
   }
   
   .project-grid {
@@ -31,13 +35,23 @@
 }
 
 .right-section {
+  flex-direction: column-reverse;
+  
+  @media screen and (min-width: $breakpoint800) {
+    flex-direction: row;
+  }
+
   .project-display {
     margin-left: 64px;
   }
 }
 
 .left-section {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: $breakpoint800) {
+    flex-direction: row-reverse;
+  }
 
   .project-display {
     margin-right: 64px;

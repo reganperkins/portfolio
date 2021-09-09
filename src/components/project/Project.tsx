@@ -20,6 +20,7 @@ function Project(props: ProjectProp) {
         <div className="project-grid">
           {props.topics.map((topic) =>
             <GridItem
+              key={topic.title}
               title={topic.title}
               description={topic.description}
             />

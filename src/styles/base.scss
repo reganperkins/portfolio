@@ -3,17 +3,22 @@
 
 html {
   box-sizing: border-box;
+  background-color: #F4C1F6;
 }
+
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
+  position: relative;
+  z-index: 1;
   margin: 0;
   font-family: $fontPrimary;
   font-display: optional;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
 code {
@@ -99,10 +104,6 @@ ul {
 
 .flex {
   display: flex;
-}
-
-.full-width {
-  width: 100%;
 }
 
 .block {

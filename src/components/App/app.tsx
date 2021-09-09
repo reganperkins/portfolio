@@ -73,8 +73,8 @@ function App() {
             ]}
           >
             <div className="project-display">
-              <img src="/images/projects/login.png" className="full-width" alt="A new, modernized developer experience" />
               <BlobSlant className={`${styles.blob} ${styles.blue} ${styles.blobRight}`}/>
+              <img src="/images/projects/login.png" className={styles.projectDesktopImage} alt="A new, modernized developer experience" />
             </div>
           </Project>
           
@@ -94,8 +94,8 @@ function App() {
             ]}
           >
           <div className={`project-display`}>
-            <img src="/images/projects/dribbble-1-5.png" className="full-width" alt="Stunning, clean and user friendly redesign of Dribbble" />
             <BlobSlant className={`${styles.blob} ${styles.yellow} ${styles.blobLeft}`}/>
+            <img src="/images/projects/dribbble-1-5.png" className={styles.projectDesktopImage} alt="Stunning, clean and user friendly redesign of Dribbble" />
           </div>
         </Project>
 
@@ -123,8 +123,8 @@ function App() {
             ]}
             >
             <div className={`project-display`}>
-              <img src="/images/projects/marketplace.png" className="full-width" alt="A new, modernized developer experience" />
               <BlobSlant className={`${styles.blob} ${styles.pink} ${styles.blobRight}`}/>
+              <img src="/images/projects/marketplace.png" className={styles.projectDesktopImage} alt="A new, modernized developer experience" />
             </div>
           </Project>
 
@@ -148,7 +148,7 @@ function App() {
             ]}
             >
             <div className={`project-display`}>
-              <img src="/images/projects/nav.png" className="full-width" alt="A new, modernized developer experience" />
+              <img src="/images/projects/nav.png" className={styles.projectDesktopImage} alt="A new, modernized developer experience" />
             </div>
           </Project>
 
@@ -172,8 +172,8 @@ function App() {
             ]}
             >
             <div className={`project-display`}>
-              <img src="/images/projects/designer-search.png" className="full-width" alt="A new, modernized developer experience" />
               <BlobSlant className={`${styles.blob} ${styles.blue} ${styles.blobRight}`}/>
+              <img src="/images/projects/designer-search.png" className={styles.projectDesktopImage} alt="A new, modernized developer experience" />
             </div>
           </Project>
 
@@ -193,8 +193,8 @@ function App() {
             ]}
             >
             <div className={`project-display`}>
-              <img src="/images/projects/job-board.png" className="full-width" alt="A new, modernized developer experience" />
               <BlobSlant className={`${styles.blob} ${styles.yellow} ${styles.blobLeft}`}/>
+              <img src="/images/projects/job-board.png" className={styles.projectDesktopImage} alt="A new, modernized developer experience" />
             </div>
           </Project>
 
@@ -218,8 +218,8 @@ function App() {
             ]}
             >
             <div className={`project-display`}>
-              <img src="/images/projects/learn.png" className="full-width" alt="A new, modernized developer experience" />
               <BlobSlant className={`${styles.blob} ${styles.pink} ${styles.blobRight}`}/>
+              <img src="/images/projects/learn.png" className={styles.projectDesktopImage} alt="A new, modernized developer experience" />
             </div>
           </Project>
 
@@ -239,13 +239,13 @@ function App() {
             ]}
             >
             <div className={`project-display`}>
-              <img src="/images/projects/login.png" className="full-width" alt="A new, modernized developer experience" />
               <BlobSlant className={`${styles.blob} ${styles.blue} ${styles.blobLeft}`}/>
+              <img src="/images/projects/login.png" className={styles.projectDesktopImage} alt="A new, modernized developer experience" />
             </div>
           </Project>
         </section>
 
-        <section id="contact" className="flex">
+        <section id="contact" className={styles.contact}>
           <div className={`${styles.contactArtboard} half`}>
             <div className={styles.bgTriangle}></div>
           </div>

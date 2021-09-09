@@ -1,3 +1,4 @@
+import styles from "./Project.module.scss";
 
 interface ProjectProp {
   title: string;
