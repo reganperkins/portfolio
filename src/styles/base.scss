@@ -112,7 +112,7 @@ ul {
 .half {
   flex: 1 1 100%;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: $breakpoint800) {
     flex: 1 1 50%;
   }
 }
@@ -127,6 +127,6 @@ p {
 }
 
 .section-padding {
-  max-width: 1300px;
+  max-width: $maxContainerWidth;
   margin: 24px 48px;
 }

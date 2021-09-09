@@ -27,7 +27,7 @@ function App() {
 
         <section id="about" className={styles.sectionMargin}>
           <h2 className={`section-padding ${styles.sectionTitle}`}>My specialties</h2>
-          <ul className="flex section-padding">
+          <ul className={`flex section-padding ${styles.iconList}`}>
             <IconListItem
               imageName="front-end.svg"
               title="Front-end Architecture"

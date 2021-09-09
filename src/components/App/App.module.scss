@@ -16,15 +16,24 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 75px;
+  max-width: $maxContainerWidth;
 
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: $breakpoint800) {
     flex-wrap: nowrap;
   }
 }
 
 .headerContent {
-  margin: 100px 100px 300px 50px;
+  margin: 50px 50px 100px;
   z-index: 1;
+
+  @media screen and (min-width: $breakpoint800) {
+    margin: 100px 50px 300px 50px;
+  }
+
+  @media screen and (min-width: $breakpoint1200) {
+    margin: 100px 100px 300px 50px;
+  }
 }
 
 .headerImage {
@@ -33,12 +42,26 @@
 
   img {
     position: absolute;
-    bottom: 0;
-    width: 900px;
+    width: 650px;
+    bottom: 25%;
+
+    @media screen and (min-width: $breakpoint1200) {
+      bottom: 0;
+      width: 900px;
+    }
   }
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: $breakpoint800) {
     display: block;
+  }
+}
+
+.iconList {
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media screen and (min-width: $breakpoint800) {
+    flex-direction: row;
   }
 }
 

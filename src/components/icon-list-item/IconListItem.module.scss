@@ -1,16 +1,19 @@
 .container {
-  flex: 1;
   display: flex;
+  flex: 1 0 300px;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-
-li {
   margin-right: 32px;
+  margin-bottom: 32px;
+  text-align: center;
 
   &:last-child {
     margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  p {
+    max-width: 350px;
   }
 }
 
