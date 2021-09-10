@@ -9,7 +9,6 @@ function useScrollAnimation(refEl: any) {
     if (!target) return;
     const targetPos = target.getBoundingClientRect().top;
     const targetHeight = target.offsetHeight;
-    console.log(targetPos, targetHeight)
 
     const onScroll = () => {
       const scrollPos = window.scrollY + window.innerHeight;

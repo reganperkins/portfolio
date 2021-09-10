@@ -1,9 +1,21 @@
-// nav is a component as we might have state one the nav items
+import { useLayoutEffect, useState } from "react";
 import styles from "./Nav.module.scss"
 
 function Nav() {
+  const [show, setShow] = useState(false);
+  useLayoutEffect(() => {
+    const setNavVisibility = () => {
+      setShow(window.scrollY < 100)
+    };
+    setNavVisibility();
+    window.addEventListener("scroll", setNavVisibility);
+    return () => window.removeEventListener("scroll", setNavVisibility);
+  }, []);
+
+  const navClasses = `${show ? 'fade-in-down animation-delay-350' : 'fade-out-up'}`;
+// console.log(navClasses)
   return (
-    <nav className="fade-in-down animation-delay-350">
+    <nav className={navClasses}>
       <ul className={styles.navList}>
         <li>
           <a href="#about">About</a>

@@ -14,6 +14,23 @@
   }
 }
 
+@keyframes fadeoutup {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
+  }
+
+  to {
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px)
+  }
+}
+
+
 @keyframes fadeinup {
   0% {
       visibility: hidden;
@@ -36,7 +53,7 @@
 }
 
 .fade-out-down {
-  animation: fadeinup 250ms linear reverse;
+  animation: fadeinup 250ms linear reverse forwards;
 }
 
 .fade-in-down {
@@ -45,7 +62,7 @@
 }
 
 .fade-out-up {
-  animation: fadeindown 250ms ease-in-out reverse;
+  animation: fadeoutup 250ms linear forwards;
 }
 
 .animation-delay-350 {

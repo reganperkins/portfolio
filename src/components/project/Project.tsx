@@ -19,7 +19,7 @@ function Project(props: ProjectProp) {
   let desktopImage;
 
   const desktopRef = useRef(null);
-  const { show, showPercent } = useScrollAnimation(desktopRef);
+  const { showPercent } = useScrollAnimation(desktopRef);
 
   const baseX = 100 - showPercent;
   const desktopImageStyles = {
@@ -31,7 +31,7 @@ function Project(props: ProjectProp) {
     blobClass = styles[`blob${props.layout}`];
     blob = <BlobSlant className={`${styles.blob} ${styles[props.color]} ${blobClass}`}/>;
   }
-  desktopImage = <img ref={desktopRef} src={`/images/projects/${props.desktopImage}`} width="605" height="405" style={desktopImageStyles} className={styles.projectDesktopImage} alt={props.title} />;
+  desktopImage = props.desktopImage && <img ref={desktopRef} src={`/images/projects/${props.desktopImage}`} width="605" height="405" style={desktopImageStyles} className={styles.projectDesktopImage} alt={props.title} />;
 
   return (
     <article className={`${props.layout}-section project-container section-padding`}>
