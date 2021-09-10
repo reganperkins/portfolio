@@ -4,7 +4,7 @@ function useScrollAnimation(refEl: any) {
   console.log("This is the target received: " + refEl);
 
   const [show, setShow] = useState(false);
-  const [percentShown, setPercentShow] = useState(0);
+  const [showPercent, setShowPercent] = useState(0);
   const target = refEl.current;
 
   useLayoutEffect(() => {
@@ -18,7 +18,7 @@ function useScrollAnimation(refEl: any) {
         let itemPercent = ((scrollPos - targetPos) * 100) / targetHeight;
         if (itemPercent > 100) itemPercent = 100;
         if (itemPercent < 0) itemPercent = 0;
-        setPercentShow(() => itemPercent);
+        setShowPercent(() => itemPercent);
       } else if (targetPos > scrollPos) {
         setShow(() => false);
       }
@@ -27,6 +27,11 @@ function useScrollAnimation(refEl: any) {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, [target]);
+
+  return {
+    show,
+    showPercent,
+  }
 }
 
 export default useScrollAnimation;
