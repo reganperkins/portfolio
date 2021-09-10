@@ -2,18 +2,26 @@ import { useLayoutEffect, useState } from "react";
 import styles from "./Nav.module.scss"
 
 function Nav() {
+  let initialRender = true;
   const [show, setShow] = useState(false);
   useLayoutEffect(() => {
     const setNavVisibility = () => {
-      setShow(window.scrollY < 100)
+      initialRender = false;
+      setShow(window.scrollY < 150);
     };
-    setNavVisibility();
+    setShow(window.scrollY < 100);
     window.addEventListener("scroll", setNavVisibility);
     return () => window.removeEventListener("scroll", setNavVisibility);
   }, []);
 
-  const navClasses = `${show ? 'fade-in-down animation-delay-350' : 'fade-out-up'}`;
-// console.log(navClasses)
+  let navClasses = '';
+
+  if (initialRender) {
+    navClasses = show ? 'fade-in-down animation-delay-350' : '';
+  } else {
+    navClasses = `${show ? 'fade-in-down' : 'fade-out-up'}`;
+  }
+
   return (
     <nav className={navClasses}>
       <ul className={styles.navList}>
