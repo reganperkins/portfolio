@@ -45,9 +45,10 @@ function App() {
           </ul>
         </section>
 
-        <Projects
-          sectionClass={styles.sectionMargin}
-        />
+        <section id="work" className={styles.sectionMargin}>
+          <h2 className="section-padding">Achievements</h2>
+          <Projects />
+        </section>
 
         <section id="contact" className={styles.contact}>
           <div className={`${styles.contactArtboard} half`}>

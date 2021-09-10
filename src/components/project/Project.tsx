@@ -1,5 +1,6 @@
 import GridItem from './GridItem'
 import { ReactComponent as BlobSlant } from './assets/blob-slant.svg';
+// import useScrollAnimation from '../../hooks/useScrollAnimation';
 import styles from "./Projects.module.scss";
 
 interface ProjectProp {
