@@ -17,11 +17,11 @@
     fill: $pink;
   }
 
-  &.blobRight {
+  &.blobright {
     left: 0;
   }
 
-  &.blobLeft {
+  &.blobleft {
     right: 0;
     transform: scale(-1, 1);
   }

@@ -9,30 +9,39 @@ interface ProjectProp {
   description?: string;
   color: string;
   desktopImage: string;
-  containerClass?: string;
+  layout?: string;
   topics: { title: string; description: string; }[];
   children?: JSX.Element | JSX.Element[];
 }
 
 function Project(props: ProjectProp) {
+  let blob;
+  let desktopImage;
+
   const desktopRef = useRef(null);
   const { show, showPercent } = useScrollAnimation(desktopRef);
-  console.log('test', show, showPercent)
 
-  let blob;
-  let blobClass 
-  if (props.containerClass === 'right-section') {
-    blobClass = styles.blobRight;
-  } else if (props.containerClass === 'left-section') {
-    blobClass = styles.blobLeft;
-  }
+  if (props.layout === 'left' || props.layout === 'right') {
+    let blobClass = '';
+    blobClass = styles[`blob${props.layout}`];
+    blob = <BlobSlant className={`${styles.blob} ${styles[props.color]} ${blobClass}`}/>;
 
-  if (blobClass) {
-    blob = <BlobSlant className={`${styles.blob} ${styles[props.color]} ${blobClass}`}/>
+    const baseX = showPercent + 100;
+    const desktopImageStyles = {
+      transform: `translateY(-${baseX}px)`,
+    }
+
+    desktopImage = <img ref={desktopRef} src={`/images/projects/${props.desktopImage}`} width="605" height="405" style={desktopImageStyles} className={styles.projectDesktopImage} alt={props.title} />;
+  } else {
+    const baseX = showPercent;
+    const desktopImageStyles = {
+      transform: `translateY(-${baseX / 2}px)`,
+    }
+    desktopImage = <img ref={desktopRef} src={`/images/projects/${props.desktopImage}`} width="605" height="405" style={desktopImageStyles} className={styles.projectDesktopImage} alt={props.title} />;
   }
 
   return (
-    <article className={`${props.containerClass} project-container section-padding`}>
+    <article className={`${props.layout}-section project-container section-padding`}>
       <div className="project-content">
         <h3>{ props.title }</h3>
         <p>{ props.description }</p>
@@ -48,7 +57,7 @@ function Project(props: ProjectProp) {
       </div>
       <div className="project-display">
         { blob }
-        <img ref={desktopRef} src={`/images/projects/${props.desktopImage}`} width="605" height="405" className={styles.projectDesktopImage} alt={props.title} />
+        { desktopImage }
         { props.children }
       </div>
     </article>

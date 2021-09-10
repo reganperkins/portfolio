@@ -1,6 +1,7 @@
 @import './variables';
 
 .project-container {
+  align-items: center;
   margin-bottom: 64px;
 
   @media screen and (min-width: $breakpoint800) {

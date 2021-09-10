@@ -6,6 +6,7 @@ function useScrollAnimation(refEl: any) {
 
   useLayoutEffect(() => {
     const target = refEl.current;
+    if (!target) return;
     const targetPos = target.getBoundingClientRect().top;
     const targetHeight = target.offsetHeight;
     console.log(targetPos, targetHeight)
