@@ -1,6 +1,7 @@
+import { useRef } from "react";
 import GridItem from './GridItem'
 import { ReactComponent as BlobSlant } from './assets/blob-slant.svg';
-// import useScrollAnimation from '../../hooks/useScrollAnimation';
+import useScrollAnimation from '../../hooks/useScrollAnimation';
 import styles from "./Projects.module.scss";
 
 interface ProjectProp {
@@ -14,6 +15,10 @@ interface ProjectProp {
 }
 
 function Project(props: ProjectProp) {
+  const desktopRef = useRef(null);
+  const { show, showPercent } = useScrollAnimation(desktopRef);
+  console.log('test', show, showPercent)
+
   let blob;
   let blobClass 
   if (props.containerClass === 'right-section') {
@@ -43,7 +48,7 @@ function Project(props: ProjectProp) {
       </div>
       <div className="project-display">
         { blob }
-        <img src={`/images/projects/${props.desktopImage}`} className={styles.projectDesktopImage} alt={props.title} />
+        <img ref={desktopRef} src={`/images/projects/${props.desktopImage}`} width="605" height="405" className={styles.projectDesktopImage} alt={props.title} />
         { props.children }
       </div>
     </article>
@@ -52,6 +57,7 @@ function Project(props: ProjectProp) {
 
 Project.defaultProps = {
   color: 'blue',
+  desktopImage: 'dribbble-1-5.png'
 } as Partial<ProjectProp>;
 
 export default Project;

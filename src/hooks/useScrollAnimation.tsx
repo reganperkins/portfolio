@@ -1,15 +1,14 @@
 import { useLayoutEffect, useState } from "react";
 
 function useScrollAnimation(refEl: any) {
-  console.log("This is the target received: " + refEl);
-
   const [show, setShow] = useState(false);
   const [showPercent, setShowPercent] = useState(0);
-  const target = refEl.current;
 
   useLayoutEffect(() => {
+    const target = refEl.current;
     const targetPos = target.getBoundingClientRect().top;
     const targetHeight = target.offsetHeight;
+    console.log(targetPos, targetHeight)
 
     const onScroll = () => {
       const scrollPos = window.scrollY + window.innerHeight;
@@ -26,7 +25,7 @@ function useScrollAnimation(refEl: any) {
 
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, [target]);
+  }, [refEl]);
 
   return {
     show,
