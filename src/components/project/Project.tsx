@@ -21,24 +21,17 @@ function Project(props: ProjectProp) {
   const desktopRef = useRef(null);
   const { show, showPercent } = useScrollAnimation(desktopRef);
 
+  const baseX = 100 - showPercent;
+  const desktopImageStyles = {
+    transform: `translateY(${baseX}px)`,
+  }
+
   if (props.layout === 'left' || props.layout === 'right') {
     let blobClass = '';
     blobClass = styles[`blob${props.layout}`];
     blob = <BlobSlant className={`${styles.blob} ${styles[props.color]} ${blobClass}`}/>;
-
-    const baseX = showPercent + 100;
-    const desktopImageStyles = {
-      transform: `translateY(-${baseX}px)`,
-    }
-
-    desktopImage = <img ref={desktopRef} src={`/images/projects/${props.desktopImage}`} width="605" height="405" style={desktopImageStyles} className={styles.projectDesktopImage} alt={props.title} />;
-  } else {
-    const baseX = showPercent;
-    const desktopImageStyles = {
-      transform: `translateY(-${baseX / 2}px)`,
-    }
-    desktopImage = <img ref={desktopRef} src={`/images/projects/${props.desktopImage}`} width="605" height="405" style={desktopImageStyles} className={styles.projectDesktopImage} alt={props.title} />;
   }
+  desktopImage = <img ref={desktopRef} src={`/images/projects/${props.desktopImage}`} width="605" height="405" style={desktopImageStyles} className={styles.projectDesktopImage} alt={props.title} />;
 
   return (
     <article className={`${props.layout}-section project-container section-padding`}>
