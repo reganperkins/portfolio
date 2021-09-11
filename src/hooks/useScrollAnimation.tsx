@@ -1,4 +1,5 @@
 import { useLayoutEffect, useState } from "react";
+import throttle from 'lodash/throttle';
 
 function useScrollAnimation(refEl: any) {
   const [show, setShow] = useState(false);
@@ -7,7 +8,7 @@ function useScrollAnimation(refEl: any) {
   useLayoutEffect(() => {
     const target = refEl.current;
     if (!target) return;
-    const targetPos = target.getBoundingClientRect().top;
+    const targetPos = window.pageYOffset + target.getBoundingClientRect().top;
     const targetHeight = target.offsetHeight;
 
     const onScroll = () => {
@@ -23,10 +24,11 @@ function useScrollAnimation(refEl: any) {
       }
     };
 
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [refEl]);
+    const throttledOnScroll = throttle(onScroll, 10);
 
+    window.addEventListener("scroll", throttledOnScroll);
+    return () => window.removeEventListener("scroll", throttledOnScroll);
+  }, [refEl]);
   return {
     show,
     showPercent,
