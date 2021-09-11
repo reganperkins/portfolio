@@ -2,7 +2,7 @@
 
 .blob {
   position: absolute;
-  bottom: 0;
+  bottom: -180px;
   z-index: -1;
 
   &.yellow {
@@ -29,4 +29,8 @@
 
 .projectDesktopImage {
   width: 100%;
+  height: auto;
+  @media screen and (min-width: $breakpoint800) {
+    min-width: 550px;
+  }
 }

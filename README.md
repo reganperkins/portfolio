@@ -71,13 +71,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### TODO
-[] hook up contact form
-[] separate project scss
-[] add scroll animations
-[] add mobile views
-[] add modernize webpage
-[] update responsive design
-[] testing
-[] format on save
-[] typescript tutorial
-[] dry up projects
+[ ] hook up contact form
+[ ] separate project scss
+[ ] add mobile views
+[ ] add modernize webpage
+[ ] update responsive design
+[ ] testing
+[ ] format on save
+[ ] typescript tutorial
+[ ] dry up projects
+[ ] responsive images
