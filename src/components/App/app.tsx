@@ -46,7 +46,7 @@ function App() {
         </section>
 
         <section id="work" className={styles.sectionMargin}>
-          <h2 className="section-padding">Achievements</h2>
+          <h2 className={`section-padding ${styles.sectionTitle}`}>Achievements</h2>
           <Projects />
         </section>
 
