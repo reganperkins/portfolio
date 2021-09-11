@@ -1,29 +1,12 @@
-import { useLayoutEffect, useState } from "react";
 import styles from "./Nav.module.scss"
+import useWindowScrollPosition from '../../hooks/useWindowScrollPosition';
 
 function Nav() {
-  let initialRender = true;
-  const [show, setShow] = useState(false);
-  useLayoutEffect(() => {
-    const setNavVisibility = () => {
-      initialRender = false;
-      setShow(window.scrollY < 150);
-    };
-    setShow(window.scrollY < 100);
-    window.addEventListener("scroll", setNavVisibility);
-    return () => window.removeEventListener("scroll", setNavVisibility);
-  }, []);
-
-  let navClasses = '';
-
-  if (initialRender) {
-    navClasses = show ? 'fade-in-down animation-delay-350' : '';
-  } else {
-    navClasses = `${show ? 'fade-in-down' : 'fade-out-up'}`;
-  }
-
+  const { scrollPos } = useWindowScrollPosition();
+  const show = scrollPos < 200;
+  
   return (
-    <nav className={navClasses}>
+    <nav className={`${show ? 'fade-in-down animation-delay-350' : 'fade-out-up'}`}>
       <ul className={styles.navList}>
         <li>
           <a href="#about">About</a>
