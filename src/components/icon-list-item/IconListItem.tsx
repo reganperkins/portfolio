@@ -1,3 +1,4 @@
+import Icon from "../icon/Icon"
 import styles from "./IconListItem.module.scss"
 
 interface IconListItemProp {
@@ -9,7 +10,7 @@ interface IconListItemProp {
 function IconListItem(props: IconListItemProp) {
   return (
     <li className={styles.container}>
-      <img src={`/images/${props.imageName}`} alt={props.title} className={styles.image}/>
+      <Icon name={props.imageName} alt={props.title} className={styles.image} />
       <h3>{ props.title }</h3>
       <p>{ props.description }</p>
     </li>
