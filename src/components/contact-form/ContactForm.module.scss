@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.contactForm {
+  max-width: 450px;
+  margin-bottom: 42px;
+
+
+  @media screen and (min-width: $breakpoint800) {
+    margin-right: 50px;
+  }
+}

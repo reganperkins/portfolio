@@ -3,6 +3,7 @@ import Nav from '../nav/Nav';
 import IconListItem from '../icon-list-item/IconListItem';
 import Projects from '../project/Projects';
 import WaveButton from '../wave-button/WaveButton';
+import ContactForm from '../contact-form/ContactForm';
 import headerImage from './assets/placeholder.jpeg';
 import styles from "./App.module.scss";
 
@@ -62,12 +63,7 @@ function App() {
               <a className="block" href="tel:+1-604-992-7526">(604) 992-7526</a>
               <a href="https://github.com/reganperkins">Github</a>
             </p>
-            <form className={styles.contactForm}>
-              <input type="text" placeholder="Name"></input>
-              <input type="email" placeholder="Email"></input>
-              <textarea rows={5} placeholder="Message"></textarea>
-              <button>Send Message</button>
-            </form>
+            <ContactForm />
           </div>
         </section>
       </main>

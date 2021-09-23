@@ -97,12 +97,3 @@
   background: linear-gradient(to top left, #fff 0%, #fff 50%, #F3FBFE 50%, #F3FBFE 100%);
 }
 
-.contactForm {
-  max-width: 450px;
-  margin-bottom: 42px;
-
-
-  @media screen and (min-width: $breakpoint800) {
-    margin-right: 50px;
-  }
-}
