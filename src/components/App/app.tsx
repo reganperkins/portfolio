@@ -16,7 +16,7 @@ function App() {
             <p className={styles.slug}>Hello. This is</p>
             <h1>Regan Little</h1>
             <p>(n.) /Ray-gun/</p>
-            <p>defn. a <strong>Senior Front-end Engineer</strong> who is passionate about building beautiful, performant, and accessible applications. Always curious and in love with the challenge of learning new technologies —I enjoy writing clean, concise, functional code that provides the best user experience possible.</p>
+            <p>defn. a <strong>Senior Frontend Engineer</strong> who is passionate about building beautiful, performant, and accessible applications. Always curious and in love with the challenge of learning new technologies —I enjoy writing clean, concise, functional code that provides the best user experience possible.</p>
             <WaveButton />
           </div>
           <div className={`${styles.headerImage} half fade-in-down animation-delay-450`}>
@@ -28,9 +28,9 @@ function App() {
           <h2 className={`section-padding ${styles.sectionTitle}`}>My specialties</h2>
           <ul className={`flex section-padding ${styles.iconList}`}>
             <IconListItem
-              imageName="front-end.svg"
-              title="Front-end Architecture"
-              description="Architect efficient and reusable front-end systems that drive complex web applications"
+              imageName="frontend.svg"
+              title="Frontend Architecture"
+              description="Architect efficient and reusable frontend systems that drive complex web applications"
             />
             <IconListItem
               imageName="brain.svg"

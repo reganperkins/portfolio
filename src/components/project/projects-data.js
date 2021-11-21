@@ -44,7 +44,7 @@ export const projects = [
   {
     id: 'Marketplace',
     title: 'Marketplace ...coming soon',
-    description: 'Front-end lead on the biggest change to our marketplace ever',
+    description: 'Frontend lead on the biggest change to our marketplace ever',
     layout: 'right',
     topics: [
       {
