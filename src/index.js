@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './styles/base.scss';
 import './styles/layout.scss';
 import './styles/animations.scss';
-import App from './components/App/App.tsx';
+import App from './components/app/App.tsx';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
