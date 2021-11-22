@@ -37,6 +37,10 @@
   display: none;
   position: relative;
 
+  @media screen and (min-width: $breakpoint800) {
+    display: block;
+  }
+
   img {
     position: absolute;
     width: 650px;
@@ -46,10 +50,6 @@
       bottom: 0;
       width: 900px;
     }
-  }
-
-  @media screen and (min-width: $breakpoint800) {
-    display: block;
   }
 }
 
@@ -75,10 +75,19 @@
 .contact {
   display: flex;
   flex-direction: column;
-  padding: 64px;
   align-items: center;
+  padding: 64px 32px;
+  text-align: center;
   background-color: $purple;
   color: $white;
+
+  @media screen and (min-width: $breakpoint800) {
+    padding: 64px;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+  }
 
   a:link,
   a:visited {
