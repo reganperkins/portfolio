@@ -4,6 +4,9 @@ import IconListItem from '../icon-list-item/IconListItem';
 import Projects from '../project/Projects';
 import WaveButton from '../wave-button/WaveButton';
 import headerImage from './assets/placeholder.jpeg';
+import { ReactComponent as GithubIcon } from './assets/github-icon.svg';
+import { ReactComponent as ResumeIcon } from './assets/resume-icon.svg';
+import { ReactComponent as LinkedinIcon } from './assets/linkedin-icon.svg';
 import styles from "./App.module.scss";
 
 function App() {
@@ -51,24 +54,15 @@ function App() {
         </section>
 
         <section id="contact" className={styles.contact}>
-          <div className={`${styles.contactArtboard} half`}>
-            <div className={styles.bgTriangle}></div>
-          </div>
-          <div className="half">
-            <h2>Lets talk</h2>
-            <p className={styles.subTitle}>I'd love to hear from you</p>
-            <p>
-              <a className="block" href="mailto:reganllittle@gmail.com">reganllittle@gmail.com</a>
-              <a className="block" href="tel:+1-604-992-7526">(604) 992-7526</a>
-              <a href="https://github.com/reganperkins">Github</a>
-            </p>
-            <form className={styles.contactForm}>
-              <input type="text" placeholder="Name"></input>
-              <input type="email" placeholder="Email"></input>
-              <textarea rows={5} placeholder="Message"></textarea>
-              <button>Send Message</button>
-            </form>
-          </div>
+          <h2>Intrested in learning more?</h2>
+          <p className={styles.subTitle}>I'd love to hear from you</p>
+          <ul className={styles.socialsList}>
+            <li><a href="https://github.com/reganperkins"><GithubIcon /></a></li>
+            <li><a href="www.linkedin.com/in/reganlittle"><LinkedinIcon /></a></li>
+            <li><a href="https://www.dropbox.com/s/hnlkozxe6mq5ogm/_Regan%20Little%202021%20resume.pdf?dl=0"><ResumeIcon /></a></li>
+          </ul>
+          <a className="font-body" href="mailto:reganllittle@gmail.com">reganllittle@gmail.com</a>
+          <a className="font-body" href="tel:+1-604-992-7526">(604) 992-7526</a>
         </section>
       </main>
     </React.Fragment>

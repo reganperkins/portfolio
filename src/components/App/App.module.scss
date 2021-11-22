@@ -7,7 +7,6 @@
 .subTitle {
   margin-top: 0px;
   font-weight: 600;
-  color: $purple;
 }
 
 .header {
@@ -76,33 +75,33 @@
 .contact {
   display: flex;
   flex-direction: column;
+  padding: 64px;
   align-items: center;
+  background-color: $purple;
+  color: $white;
 
-  @media screen and (min-width: $breakpoint800) {
-    flex-direction: row;
-    align-items: stretch;
+  a:link,
+  a:visited {
+    color: $white;
   }
 }
 
-.contactArtboard {
-  position: relative;
-  overflow: hidden;
-}
+.socialsList {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 16px;
 
-.bgTriangle{
-  position: absolute;
-  left: -50px;
-  width: 500px;
-  height: 1000px;
-  background: linear-gradient(to top left, #fff 0%, #fff 50%, #F3FBFE 50%, #F3FBFE 100%);
-}
+  svg {
+    width: 42px;
+    height: 42px;
+    fill: $white;
+  }
 
-.contactForm {
-  max-width: 450px;
-  margin-bottom: 42px;
+  li {
+    margin-right: 32px;
 
-
-  @media screen and (min-width: $breakpoint800) {
-    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
