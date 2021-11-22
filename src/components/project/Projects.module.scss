@@ -31,7 +31,10 @@
   width: 100%;
   height: auto;
   background-color: $white;
-  @media screen and (min-width: $breakpoint800) {
+  margin-bottom: 64px;
+
+  @media screen and (min-width: $breakpoint1200) {
     min-width: 550px;
+    margin-bottom: 0px;
   }
 }

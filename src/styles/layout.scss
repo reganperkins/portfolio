@@ -19,7 +19,7 @@
   .project-content {
     flex: 1 1 100%;
 
-    @media screen and (min-width: $breakpoint800) {
+    @media screen and (min-width: $breakpoint1200) {
       flex: 1 1 50%;
     }
   }
@@ -46,25 +46,29 @@
 .right-section {
   flex-direction: column-reverse;
   
-  @media screen and (min-width: $breakpoint800) {
+  @media screen and (min-width: $breakpoint1200) {
     flex-direction: row;
   }
 
   .project-display {
-    margin-left: 64px;
+    @media screen and (min-width: $breakpoint1200) {
+      margin-left: 64px;
+    }
   }
 }
 
 .left-section {
   flex-direction: column-reverse;
 
-  @media screen and (min-width: $breakpoint800) {
+  @media screen and (min-width: $breakpoint1200) {
     flex-direction: row-reverse;
   }
 
   .project-display {
     direction: rtl;
+    @media screen and (min-width: $breakpoint1200) {
     margin-right: 64px;
+    }
   }
 }
 
