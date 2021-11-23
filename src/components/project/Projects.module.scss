@@ -2,16 +2,16 @@
 
 .blob {
   position: absolute;
-  // bottom: -180px;
-  // width: 500px;
-  // height: 600px;
-  top: 30%;
+  top: -60%;
   width: 150%;
   z-index: -1;
 
   @media screen and (min-width: $breakpoint800) {
-    // width: auto;
-    // height: auto;
+    top: -75%;
+  }
+  @media screen and (min-width: $breakpoint1200) {
+    top: -100%;
+    width: 170%;
   }
 
   &.yellow {
@@ -28,12 +28,14 @@
 
   &.blobright {
     left: 0;
-    transform: translateY(-50%) rotate(23deg);
+    transform: rotate(23deg);
+    // transform: translateY(-50%) rotate(23deg);
   }
 
   &.blobleft {
     right: 0;
-    transform: scale(-1, 1) translateY(-50%) rotate(23deg);
+    transform: scale(-1, 1) rotate(23deg);
+    // transform: scale(-1, 1) translateY(-50%) rotate(23deg);
     
   }
 }
@@ -48,4 +50,8 @@
     min-width: 550px;
     margin-bottom: 0px;
   }
+}
+
+.description {
+  margin-bottom: 32px;
 }

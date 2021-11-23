@@ -37,7 +37,7 @@ function Project(props: ProjectProp) {
     <article className={`${props.layout}-section project-container section-padding`}>
       <div className="project-content">
         <h3>{ props.title }</h3>
-        <p>{ props.description }</p>
+        <p className={styles.description}>{ props.description }</p>
         <div className="project-grid">
           {props.topics.map((topic) =>
             <GridItem

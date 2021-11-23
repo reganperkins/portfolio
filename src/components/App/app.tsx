@@ -13,7 +13,7 @@ function App() {
   return (
     <React.Fragment>
       <Nav />
-      <main>
+      <main className={styles.contentContainer}>
         <header className={styles.header}>
           <div className={`${styles.headerContent} half fade-in-up animation-delay-350`}>
             <p className={styles.slug}>Hello. This is</p>

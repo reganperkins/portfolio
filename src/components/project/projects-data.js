@@ -7,19 +7,19 @@ export const projects = [
     topics: [
       {
         title: 'Storybook',
-        description: 'Building UI components and pages in isolation makes it easier to QA, add new behavior after a component has been made, and develop without interference.'
+        description: 'I helped implement Storybook in our process, allowing us to build UI components and pages in isolation. Storybook makes QA, adding new behavior, and adding documentation easier, and allows us to develop without interference.'
       },
       {
         title: 'Tooling',
-        description: 'I set up our Eslint, Prettier, and increased usage of tools like Bundle Wizard and Lighthouse which have made our site more preferment and code consistent.'
+        description: 'I set up our Eslint and Prettier, standardized our usage of tools like Bundle Wizard, Caliber, and Lighthouse. Using the aforementioned tools we have made our site increasingly more preferment and code consistent.'
       },
       {
         title: 'Vue',
-        description: 'Vue has made our development easier with the addition of a component library that matches our design system, better testing tools, built in reactivity and easy readability.',
+        description: 'Vue has made our development easier, enabling us to build up a component library that matches our design system, better testing tools, built-in reactivity, and easy readability.',
       },
       {
         title: 'Developer guide',
-        description: 'I helped to create our internal development guide which helps onboard new users. It outlines important concepts like lazyloading, responsive images, using scoped styles and patterns for testing.',
+        description: 'I helped to create our internal development guide to help onboard new users. It outlines important concepts like lazyloading, responsive images, using scoped styles and patterns for testing.',
       },
     ],
     desktopImage: 'login.png',
@@ -36,7 +36,7 @@ export const projects = [
       },
       {
         title: 'A shared ecosystem',
-        description: 'Previous to the re-skin Dribbble did not have a set design system. This meant that every time a dropdown was needed there was a good chance a new one would be created. In order to put an end to the madness and ensure that design and engineering where in sync I worked to create a shared design system and component library. This has since greatly improved our development time and cohesiveness of our site.',
+        description: 'Previous to the re-skin Dribbble did not have a set design system. This meant that every time a dropdown was needed there was a good chance a new one would be created. In order to put an end to the madness and ensure that design and engineering were in-sync I worked to create a shared design system and component library. This has since greatly improved the time it takes to develop new features and the cohesiveness of our site.',
       }
     ],
     desktopImage: 'dribbble-1-5.png',
@@ -44,24 +44,24 @@ export const projects = [
   {
     id: 'Marketplace',
     title: 'Marketplace',
-    description: 'Frontend lead on the biggest change to our marketplace ever',
+    description: 'I was the Frontend lead on the new marketplace project, this was the biggest change to our marketplace ever. I scoped out the requirements, ticketed the project into tasks, guided other developers on the team at the time of implementation, and included tech debt tasks into the project.',
     layout: 'right',
     topics: [
       {
-        title: 'Goods upload flow',
-        description: 'A complete re-write of our upload flow, this change also splits a \'good\' into its own first world citizen.'
+        title: 'Product upload flow',
+        description: 'A complete re-write of our product upload flow, this change also splits a \'good\' (item for sale) into its own first-world citizen.'
       },
       {
         title: 'A central marketplace',
-        description: 'Created a new marketplace hub with suggested goods, daily features, filters and category pages.'
+        description: 'Created a new marketplace hub with suggested goods, daily features, search, filters, and category pages.'
       },
       {
         title: 'Admin queue',
-        description: 'Mentored a junior dev on using Vue, project scoping and helped them create our new admin review queue for posted goods.'
+        description: 'Mentored a junior dev on using Vue, project scoping, and helped them create our new admin review queue for posted \'goods\'.'
       },
       {
-        title: 'Refactoring old (hairy) code',
-        description: 'Our concept of shots and shots as a good is old highly coupled code. I took this opportunity to refactor and cleanup that logic.'
+        title: 'Refactored old (hairy) code',
+        description: 'Our concept of shots and shots as a \'good\' is old highly coupled code. I took this opportunity to refactor and clean up that logic.'
       },
     ],
     desktopImage: 'marketplace.png',
@@ -74,15 +74,15 @@ export const projects = [
     topics: [
       {
         title: 'Easily surface information',
-        description: 'Quick access to the profile, highlighting hiring platforms and job listings, adding quick search.'
+        description: 'I have added the last two versions of the navigation on Dribbble. Each change has dramatically increased our user\'s ability to access what they want.'
       },
       {
         title: 'Better data analytics',
-        description: 'Leveraging Iteratively to better understand our users in order tailor a better experience.'
+        description: 'Leveraging Iteratively events to better understand our users in order tailor a better experience.'
       },
       {
         title: 'Increased click through rate',
-        description: 'Driving traffic to revenue generating pages and surface the pages users want.'
+        description: 'Driving traffic to revenue generating pages and surface the pages users want. our site and navigation'
       },
     ],
     desktopImage: 'nav.png',
@@ -101,6 +101,10 @@ export const projects = [
         description: 'Allows for the filtering of talent based on their settings and preferences.'
       },
       {
+        title: 'Marketing',
+        description: 'For marketing the Designer Search platform I created an email drip campaign and set up Facebook pixel and Linkedin Ads.'
+      },
+      {
         title: 'Responsive',
         description: 'This design works flawlessly on desktop and mobile platforms and utilizes responsive images and lazyloading.'
       },
@@ -115,7 +119,7 @@ export const projects = [
     topics: [
       {
         title: 'Posting jobs',
-        description: 'Allow the posting of new roles when a user purchases a job board listing. Also creating job post details pages.'
+        description: 'Allow the posting of new roles when a user purchases a job board listing.'
       },
       {
         title: 'Filtering roles',
@@ -132,15 +136,15 @@ export const projects = [
     topics: [
       {
         title: 'Quick rollout of new events',
-        description: 'I utilized ERB templates and a yaml file to easily create new pages.'
-      },
-      {
-        title: 'Responsive layout',
-        description: 'I created the templates for the index and workshop pages, these pages.'
+        description: 'Since we need to regularly update and create new workshop pages I utilized ERB templates and a YAML file to make adding new pages a breeze.'
       },
       {
         title: 'Eventbrite',
-        description: 'Set up Eventbrite as an intermediary way of collecting payments well we build our own.'
+        description: 'I set up Eventbrite as an intermediary way of collecting payments well we build our own purchase funnel.'
+      },
+      {
+        title: 'Workshop pages',
+        description: 'Each workshop has its own page also created via ERB template and YAML file.'
       },
     ],
     desktopImage: 'learn.png',
