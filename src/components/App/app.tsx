@@ -3,13 +3,25 @@ import Nav from '../nav/Nav';
 import IconListItem from '../icon-list-item/IconListItem';
 import Projects from '../project/Projects';
 import WaveButton from '../wave-button/WaveButton';
-import headerImage from './assets/placeholder.jpeg';
+import ProgressiveImage from '../progressive-image/ProgressiveImage';
+// import headerImage from './assets/regan-little-900.png';
 import { ReactComponent as GithubIcon } from './assets/github-icon.svg';
 import { ReactComponent as ResumeIcon } from './assets/resume-icon.svg';
 import { ReactComponent as LinkedinIcon } from './assets/linkedin-icon.svg';
 import styles from "./App.module.scss";
 
 function App() {
+  const headerImageSources = [
+    {
+      type: "image/webp",
+      srcSet: "/images/header/regan-little-900.webp 900w, /images/header/regan-little-1800.webp 1800w"
+    },
+    {
+      type: "image/png",
+      srcSet: "/images/header/regan-little-900.png 900w, /images/header/regan-little-1800.png 1800w"
+    }
+  ];
+
   return (
     <React.Fragment>
       <Nav />
@@ -23,7 +35,7 @@ function App() {
             <WaveButton />
           </div>
           <div className={`${styles.headerImage} half fade-in-down animation-delay-450`}>
-            <img src={headerImage} alt="Temp header" />
+            <ProgressiveImage src="/images/header/regan-little-900.png" sources={headerImageSources} alt="Picture of Frontend Engineer Regan Little holding a mac laptop"/>
           </div>
         </header>
 
