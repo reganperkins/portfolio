@@ -9,15 +9,17 @@ interface SourceAttributes {
 interface ImageProp {
   sources: SourceAttributes[];
   alt: string;
+  style?: {};
+  className?: string;
   crossOrigin?: "anonymous" | "use-credentials" | "";
   decoding?: "async" | "auto" | "sync";
-  height?: number | string;
   loading?: "eager" | "lazy";
   referrerPolicy?: "no-referrer" | "origin" | "unsafe-url";
   sizes?: string;
   src?: string;
   srcSet?: string;
   width?: number | string;
+  height?: number | string;
 }
 
 function ProgressiveImage(props: ImageProp) {
@@ -25,7 +27,7 @@ function ProgressiveImage(props: ImageProp) {
   return (
     <picture>
       { sources.map(({...delegate}) => 
-        <source {...delegate} />
+        <source {...delegate} key={delegate.type} />
       )}
       <img {...defaultProps} />
     </picture>

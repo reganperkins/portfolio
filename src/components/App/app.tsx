@@ -4,7 +4,6 @@ import IconListItem from '../icon-list-item/IconListItem';
 import Projects from '../project/Projects';
 import WaveButton from '../wave-button/WaveButton';
 import ProgressiveImage from '../progressive-image/ProgressiveImage';
-// import headerImage from './assets/regan-little-900.png';
 import { ReactComponent as GithubIcon } from './assets/github-icon.svg';
 import { ReactComponent as ResumeIcon } from './assets/resume-icon.svg';
 import { ReactComponent as LinkedinIcon } from './assets/linkedin-icon.svg';

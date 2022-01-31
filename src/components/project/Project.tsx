@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import GridItem from './GridItem'
+import ProgressiveImage from '../progressive-image/ProgressiveImage';
 import { ReactComponent as BlobSlant } from './assets/blob-slant.svg';
 import useScrollAnimation from '../../hooks/useScrollAnimation';
 import styles from "./Projects.module.scss";
@@ -16,7 +17,6 @@ interface ProjectProp {
 
 function Project(props: ProjectProp) {
   let blob;
-  let desktopImage;
 
   const desktopRef = useRef(null);
   const { showPercent } = useScrollAnimation(desktopRef);
@@ -31,7 +31,6 @@ function Project(props: ProjectProp) {
     blobClass = styles[`blob${props.layout}`];
     blob = <BlobSlant className={`${styles.blob} ${styles[props.color]} ${blobClass}`}/>;
   }
-  desktopImage = props.desktopImage && <img ref={desktopRef} src={`/images/projects/${props.desktopImage}`} width="605" height="405" style={desktopImageStyles} className={styles.projectDesktopImage} alt={props.title} />;
 
   return (
     <article className={`${props.layout}-section project-container section-padding`}>
@@ -50,7 +49,20 @@ function Project(props: ProjectProp) {
       </div>
       <div className="project-display">
         { blob }
-        { desktopImage }
+        <div
+          ref={desktopRef}
+          style={desktopImageStyles}
+        >
+          <ProgressiveImage
+            src={`/images/projects/${props.desktopImage}`}
+            width="605"
+            height="405"
+            loading="lazy"
+            className={styles.projectDesktopImage}
+            alt={props.title}
+            sources={[]}
+          />
+        </div>
         { props.children }
       </div>
     </article>
@@ -59,7 +71,6 @@ function Project(props: ProjectProp) {
 
 Project.defaultProps = {
   color: 'blue',
-  desktopImage: 'dribbble-1-5.png'
 } as Partial<ProjectProp>;
 
 export default Project;
