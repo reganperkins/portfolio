@@ -12,12 +12,21 @@ import styles from "./App.module.scss";
 function App() {
   const headerImageSources = [
     {
-      type: "image/webp",
-      srcSet: "/images/header/regan-little-900.webp 900w, /images/header/regan-little-1800.webp 1800w"
+      type: 'image/webp',
+      media: '(min-width: 768px)',
+      srcSet: '/images/header/regan-little-900.webp 900w, /images/header/regan-little-1800.webp 1800w',
+      sizes: '(max-width: 1199px) 650px, 900px'
     },
     {
-      type: "image/png",
-      srcSet: "/images/header/regan-little-900.png 900w, /images/header/regan-little-1800.png 1800w"
+      type: 'image/png',
+      media: '(min-width: 768px)',
+      srcSet: '/images/header/regan-little-900.png 900w, /images/header/regan-little-1800.png 1800w',
+      sizes: '(max-width: 1199px) 650px, 900px'
+    },
+    {
+      media: '(max-width: 800px)',
+      size: '1px',
+      srcSet: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w',
     }
   ];
 
@@ -39,7 +48,7 @@ function App() {
               sources={headerImageSources}
               alt="Picture of Frontend Engineer Regan Little holding a mac laptop"
               width="900"
-              loading="lazy"
+              height="1588"
             />
           </div>
         </header>

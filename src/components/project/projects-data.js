@@ -25,10 +25,12 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/login-600.webp 600w, /images/projects/login-1100.webp 1100w'
       },
       {
         type: 'image/png',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/login-600.png 600w, /images/projects/login-1100.png 1100w'
       }
     ],
@@ -54,10 +56,12 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/dribbble-600.webp 600w, /images/projects/dribbble-1100.webp 1100w'
       },
       {
         type: 'image/png',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/dribbble-600.png 600w, /images/projects/dribbble-1100.png 1100w'
       }
     ],
@@ -91,10 +95,12 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/marketplace-600.webp 600w, /images/projects/marketplace-1100.webp 1100w'
       },
       {
         type: 'image/png',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/marketplace-600.png 600w, /images/projects/marketplace-1100.png 1100w'
       }
     ],
@@ -124,10 +130,12 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/nav-600.webp 600w, /images/projects/nav-1100.webp 1100w, /images/projects/nav-1428.webp 1428w'
       },
       {
         type: 'image/png',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/nav-600.png 600w, /images/projects/nav-1100.png 1100w, /images/projects/nav-1428.png 1428w'
       }
     ],
@@ -161,10 +169,12 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/designer-search-600.webp 600w, /images/projects/designer-search-1100.webp 1100w'
       },
       {
         type: 'image/png',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/designer-search-600.png 600w, /images/projects/designer-search-1100.png 1100w'
       }
     ],
@@ -191,10 +201,12 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/job-board-600.webp 600w, /images/projects/job-board-1100.webp 1100w'
       },
       {
         type: 'image/png',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/job-board-600.png 600w, /images/projects/job-board-1100.png 1100w'
       }
     ],
@@ -224,10 +236,12 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/learn-600.webp 600w, /images/projects/learn-1100.webp 1100w'
       },
       {
         type: 'image/png',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/learn-600.png 600w, /images/projects/learn-1100.png 1100w'
       }
     ],
@@ -254,10 +268,12 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/login-600.webp 600w, /images/projects/login-1100.webp 1100w'
       },
       {
         type: 'image/png',
+        sizes: '(min-width: 1199px) 600px, 100%',
         srcSet: '/images/projects/login-600.png 600w, /images/projects/login-1100.png 1100w'
       }
     ],

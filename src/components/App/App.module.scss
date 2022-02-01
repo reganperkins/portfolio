@@ -49,6 +49,7 @@
   img {
     position: absolute;
     width: 650px;
+    height: auto;
     bottom: 25%;
 
     @media screen and (min-width: $breakpoint1200) {
