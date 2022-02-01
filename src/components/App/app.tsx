@@ -39,7 +39,6 @@ function App() {
               sources={headerImageSources}
               alt="Picture of Frontend Engineer Regan Little holding a mac laptop"
               width="900"
-              height="1588"
               loading="lazy"
             />
           </div>
