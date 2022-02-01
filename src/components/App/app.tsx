@@ -34,7 +34,14 @@ function App() {
             <WaveButton />
           </div>
           <div className={`${styles.headerImage} half fade-in-down animation-delay-450`}>
-            <ProgressiveImage src="/images/header/regan-little-900.png" sources={headerImageSources} alt="Picture of Frontend Engineer Regan Little holding a mac laptop"/>
+            <ProgressiveImage
+              src="/images/header/regan-little-900.png"
+              sources={headerImageSources}
+              alt="Picture of Frontend Engineer Regan Little holding a mac laptop"
+              width="900"
+              height="1588"
+              loading="lazy"
+            />
           </div>
         </header>
 
@@ -54,7 +61,7 @@ function App() {
             <IconListItem
               imageName="bolt.svg"
               title="Optimized Performance"
-              description="Teaching teammates new strategies for better user performance Lazy Loading, responsive images, "
+              description="Teaching teammates new strategies for better user performance within new and legacy systems"
             />
           </ul>
         </section>
@@ -65,12 +72,36 @@ function App() {
         </section>
 
         <section id="contact" className={styles.contact}>
-          <h2>Intrested in learning more?</h2>
+          <h2>Interested in learning more?</h2>
           <p className={styles.subTitle}>I'd love to hear from you</p>
           <ul className={styles.socialsList}>
-            <li><a href="https://github.com/reganperkins"><GithubIcon /></a></li>
-            <li><a href="www.linkedin.com/in/reganlittle"><LinkedinIcon /></a></li>
-            <li><a href="https://www.dropbox.com/s/hnlkozxe6mq5ogm/_Regan%20Little%202021%20resume.pdf?dl=0"><ResumeIcon /></a></li>
+            <li>
+              <a
+                href="https://github.com/reganperkins"
+                className={styles.socialLink}
+              >
+                <GithubIcon />
+                <span>Github</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="www.linkedin.com/in/reganlittle"
+                className={styles.socialLink}
+              >
+                <LinkedinIcon />
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.dropbox.com/s/hnlkozxe6mq5ogm/_Regan%20Little%202021%20resume.pdf?dl=0"
+                className={styles.socialLink}
+              >
+                <ResumeIcon />
+                <span>Resume</span>
+              </a>
+            </li>
           </ul>
           <a className="font-body" href="mailto:reganllittle@gmail.com">reganllittle@gmail.com</a>
           <a className="font-body" href="tel:+1-604-992-7526">(604) 992-7526</a>

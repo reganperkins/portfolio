@@ -9,7 +9,10 @@ interface ProjectProp {
   title: string;
   description?: string;
   color: string;
-  desktopImage: string;
+  width: string;
+  height: string;
+  src: string;
+  sources: {srcSet: string}[];
   layout?: string;
   topics: { title: string; description: string; }[];
   children?: JSX.Element | JSX.Element[];
@@ -22,7 +25,7 @@ function Project(props: ProjectProp) {
   const { showPercent } = useScrollAnimation(desktopRef);
 
   const baseX = 100 - showPercent;
-  const desktopImageStyles = {
+  const imageStyles = {
     transform: `translateY(${baseX}px)`,
   }
 
@@ -51,16 +54,16 @@ function Project(props: ProjectProp) {
         { blob }
         <div
           ref={desktopRef}
-          style={desktopImageStyles}
+          style={imageStyles}
         >
           <ProgressiveImage
-            src={`/images/projects/${props.desktopImage}`}
-            width="605"
-            height="405"
+            src={props.src}
+            width={props.width}
+            height={props.height}
             loading="lazy"
-            className={styles.projectDesktopImage}
+            className={styles.projectImage}
             alt={props.title}
-            sources={[]}
+            sources={props.sources}
           />
         </div>
         { props.children }

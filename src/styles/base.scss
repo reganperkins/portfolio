@@ -125,5 +125,9 @@ p,
 
 .section-padding {
   max-width: $maxContainerWidth;
-  margin: 24px 48px;
+  margin: 24px 32px;
+  
+  @media screen and (min-width: $breakpoint800) {
+    margin: 24px 48px;
+  }
 }

@@ -22,7 +22,19 @@ export const projects = [
         description: 'I helped to create our internal development guide to help onboard new users. It outlines important concepts like lazyloading, responsive images, using scoped styles and patterns for testing.',
       },
     ],
-    desktopImage: 'login.png',
+    sources: [
+      {
+        type: 'image/webp',
+        srcSet: '/images/projects/login-600.webp 600w, /images/projects/login-1100.webp 1100w'
+      },
+      {
+        type: 'image/png',
+        srcSet: '/images/projects/login-600.png 600w, /images/projects/login-1100.png 1100w'
+      }
+    ],
+    width: '605',
+    height: '405',
+    src: '/images/projects/login-600.png'
   },
   {
     id: 'Dribbble',
@@ -39,7 +51,19 @@ export const projects = [
         description: 'Previous to the re-skin Dribbble did not have a set design system. This meant that every time a dropdown was needed there was a good chance a new one would be created. In order to put an end to the madness and ensure that design and engineering were in-sync I worked to create a shared design system and component library. This has since greatly improved the time it takes to develop new features and the cohesiveness of our site.',
       }
     ],
-    desktopImage: 'dribbble-1-5.png',
+    sources: [
+      {
+        type: 'image/webp',
+        srcSet: '/images/projects/dribbble-600.webp 600w, /images/projects/dribbble-1100.webp 1100w'
+      },
+      {
+        type: 'image/png',
+        srcSet: '/images/projects/dribbble-600.png 600w, /images/projects/dribbble-1100.png 1100w'
+      }
+    ],
+    width: '605',
+    height: '405',
+    src: '/images/projects/dribbble-600.png'
   },
   {
     id: 'Marketplace',
@@ -64,7 +88,19 @@ export const projects = [
         description: 'Our concept of shots and shots as a \'good\' is old highly coupled code. I took this opportunity to refactor and clean up that logic.'
       },
     ],
-    desktopImage: 'marketplace.png',
+    sources: [
+      {
+        type: 'image/webp',
+        srcSet: '/images/projects/marketplace-600.webp 600w, /images/projects/marketplace-1100.webp 1100w'
+      },
+      {
+        type: 'image/png',
+        srcSet: '/images/projects/marketplace-600.png 600w, /images/projects/marketplace-1100.png 1100w'
+      }
+    ],
+    width: '605',
+    height: '405',
+    src: '/images/projects/marketplace-600.png'
   },
   {
     id: 'Navigation',
@@ -85,8 +121,21 @@ export const projects = [
         description: 'Driving traffic to revenue generating pages and surface the pages users want. our site and navigation'
       },
     ],
-    desktopImage: 'nav.png',
-  }, {
+    sources: [
+      {
+        type: 'image/webp',
+        srcSet: '/images/projects/nav-600.webp 600w, /images/projects/nav-1100.webp 1100w, /images/projects/nav-1428.webp 1428w'
+      },
+      {
+        type: 'image/png',
+        srcSet: '/images/projects/nav-600.png 600w, /images/projects/nav-1100.png 1100w, /images/projects/nav-1428.png 1428w'
+      }
+    ],
+    width: '1300',
+    height: '437',
+    src: '/images/projects/nav-600.png'
+  },
+  {
     id: 'Search',
     title: 'Designer Search',
     description: 'One of Dribbble\'s bigger projects and one I was lead on. This turned out to be one of the biggest revenue streams for Dribbble; helping our users find the perfect fit for their company.',
@@ -109,7 +158,19 @@ export const projects = [
         description: 'This design works flawlessly on desktop and mobile platforms and utilizes responsive images and lazyloading.'
       },
     ],
-    desktopImage: 'designer-search.png',
+    sources: [
+      {
+        type: 'image/webp',
+        srcSet: '/images/projects/designer-search-600.webp 600w, /images/projects/designer-search-1100.webp 1100w'
+      },
+      {
+        type: 'image/png',
+        srcSet: '/images/projects/designer-search-600.png 600w, /images/projects/designer-search-1100.png 1100w'
+      }
+    ],
+    width: '605',
+    height: '405',
+    src: '/images/projects/designer-search-600.png'
   },
   {
     id: 'Job',
@@ -127,6 +188,19 @@ export const projects = [
       },
     ],
     desktopImage: 'job-board.png',
+    sources: [
+      {
+        type: 'image/webp',
+        srcSet: '/images/projects/job-board-600.webp 600w, /images/projects/job-board-1100.webp 1100w'
+      },
+      {
+        type: 'image/png',
+        srcSet: '/images/projects/job-board-600.png 600w, /images/projects/job-board-1100.png 1100w'
+      }
+    ],
+    width: '605',
+    height: '405',
+    src: '/images/projects/job-board-600.png'
   },
   {
     id: 'Workshops',
@@ -147,7 +221,19 @@ export const projects = [
         description: 'Each workshop has its own page also created via ERB template and YAML file.'
       },
     ],
-    desktopImage: 'learn.png',
+    sources: [
+      {
+        type: 'image/webp',
+        srcSet: '/images/projects/learn-600.webp 600w, /images/projects/learn-1100.webp 1100w'
+      },
+      {
+        type: 'image/png',
+        srcSet: '/images/projects/learn-600.png 600w, /images/projects/learn-1100.png 1100w'
+      }
+    ],
+    width: '605',
+    height: '405',
+    src: '/images/projects/learn-600.png'
   },
   {
     id: 'Login',
@@ -164,7 +250,20 @@ export const projects = [
         description: 'With logins simplicity is key, the updated login and sign up pages are clear, clean and convenient'
       },
     ],
-    desktopImage: 'login.png',
+    
+    sources: [
+      {
+        type: 'image/webp',
+        srcSet: '/images/projects/login-600.webp 600w, /images/projects/login-1100.webp 1100w'
+      },
+      {
+        type: 'image/png',
+        srcSet: '/images/projects/login-600.png 600w, /images/projects/login-1100.png 1100w'
+      }
+    ],
+    width: '605',
+    height: '405',
+    src: '/images/projects/login-600.png'
   },
 ];
 

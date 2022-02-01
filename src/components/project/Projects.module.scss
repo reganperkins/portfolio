@@ -29,18 +29,16 @@
   &.blobright {
     left: 0;
     transform: rotate(23deg);
-    // transform: translateY(-50%) rotate(23deg);
   }
 
   &.blobleft {
     right: 0;
     transform: scale(-1, 1) rotate(23deg);
-    // transform: scale(-1, 1) translateY(-50%) rotate(23deg);
     
   }
 }
 
-.projectDesktopImage {
+.projectImage {
   width: 100%;
   height: auto;
   background-color: $white;
