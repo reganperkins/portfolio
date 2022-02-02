@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 'Modernizing',
     title: 'Modernizing',
-    description: 'Dribbble is a ten year old Rails app. In the time I have been here we have made massive gains in feature release cadence, increasing code clarity and onboarding new developers',
+    description: 'Dribbble is a ten year old Rails app. In the time I have been here we have made massive gains in feature release cadence, increasing code clarity and onboarding new developers.',
     layout: 'right',
     topics: [
       {
@@ -23,30 +23,30 @@ export const projects = [
       },
     ],
     sources: [
+      // {
+      //   type: 'image/webp',
+      //   sizes: '(min-width: 1199px) 600px, 100%',
+      //   srcSet: '/images/projects/modernize-600.webp 620w, /images/projects/modernize-1100.webp 1100w, /images/projects/modernize-1400.webp 1400w'
+      // },
       {
-        type: 'image/webp',
+        type: 'image/jpg',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/login-600.webp 600w, /images/projects/login-1100.webp 1100w'
-      },
-      {
-        type: 'image/png',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/login-600.png 600w, /images/projects/login-1100.png 1100w'
+        srcSet: '/images/projects/modernize-600.png 620w, /images/projects/modernize-1100.png 1100w, /images/projects/modernize-1400.png 1400w'
       }
     ],
-    width: '605',
-    height: '405',
-    src: '/images/projects/login-600.png'
+    width: '618',
+    height: '408',
+    src: '/images/projects/modernize-600.png'
   },
   {
     id: 'Dribbble',
     title: 'Dribbble 1.5',
-    description: 'A completely new look for Dribbble, this was a massive under takeing with a fairly tight deadline. It involved working closely with many parties including project managers, leadership and the design team to plan and execute.',
+    description: 'A completely new look for Dribbble, this was a massive undertaking with a fairly tight deadline. It involved working closely with many parties including project managers, leadership and the design team to plan and execute.',
     layout: 'left',
     topics: [
       {
         title: 'First major update in ten years',
-        description: 'I worked to update all our color schemes, form elements, icons, as well as our default padding, margins, and basic elements. Because we needed to launch this all at once we used a webpack-level feature flag to keep showing the old styles well building the new.'
+        description: 'I worked to update all our colour schemes, form elements, icons, as well as our default padding, margins, and basic elements. Because we needed to launch this all at once we used a webpack-level feature flag to keep showing the old styles while building the new.'
       },
       {
         title: 'A shared ecosystem',
@@ -57,22 +57,22 @@ export const projects = [
       {
         type: 'image/webp',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/dribbble-600.webp 600w, /images/projects/dribbble-1100.webp 1100w'
+        srcSet: '/images/projects/dribbble-600.webp 620w, /images/projects/dribbble-1100.webp 1100w, /images/projects/dribbble-1400.webp 1400w'
       },
       {
-        type: 'image/png',
+        type: 'image/jpg',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/dribbble-600.png 600w, /images/projects/dribbble-1100.png 1100w'
+        srcSet: '/images/projects/dribbble-600.png 620w, /images/projects/dribbble-1100.png 1100w, /images/projects/dribbble-1400.png 1400w'
       }
     ],
-    width: '605',
-    height: '405',
+    width: '618',
+    height: '408',
     src: '/images/projects/dribbble-600.png'
   },
   {
     id: 'Marketplace',
     title: 'Marketplace',
-    description: 'I was the Frontend lead on the new marketplace project, this was the biggest change to our marketplace ever. I scoped out the requirements, ticketed the project into tasks, guided other developers on the team at the time of implementation, and included tech debt tasks into the project.',
+    description: 'I was the Lead Engineer on the new marketplace project, this was the biggest change to our marketplace ever. I scoped out the requirements, ticketed the project into tasks, guided other developers on the team at the time of implementation, and included tech debt tasks into the project.',
     layout: 'right',
     topics: [
       {
@@ -96,16 +96,16 @@ export const projects = [
       {
         type: 'image/webp',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/marketplace-600.webp 600w, /images/projects/marketplace-1100.webp 1100w'
+        srcSet: '/images/projects/marketplace-600.webp 620w, /images/projects/marketplace-1100.webp 1100w, /images/projects/marketplace-1400.webp 1400w'
       },
       {
-        type: 'image/png',
+        type: 'image/jpg',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/marketplace-600.png 600w, /images/projects/marketplace-1100.png 1100w'
+        srcSet: '/images/projects/marketplace-600.png 620w, /images/projects/marketplace-1100.png 1100w, /images/projects/marketplace-1400.png 1400w'
       }
     ],
-    width: '605',
-    height: '405',
+    width: '618',
+    height: '408',
     src: '/images/projects/marketplace-600.png'
   },
   {
@@ -124,19 +124,19 @@ export const projects = [
       },
       {
         title: 'Increased click through rate',
-        description: 'Driving traffic to revenue generating pages and surface the pages users want. our site and navigation'
+        description: 'Driving traffic to revenue generating pages and surface the pages users want more readily.'
       },
     ],
     sources: [
       {
         type: 'image/webp',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/nav-600.webp 600w, /images/projects/nav-1100.webp 1100w, /images/projects/nav-1428.webp 1428w'
+        sizes: '(min-width: 1199px) 1300px, 100%',
+        srcSet: '/images/projects/nav-600.webp 620w, /images/projects/nav-1100.webp 1100w, /images/projects/nav-1900.webp 1900w'
       },
       {
-        type: 'image/png',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/nav-600.png 600w, /images/projects/nav-1100.png 1100w, /images/projects/nav-1428.png 1428w'
+        type: 'image/jpg',
+        sizes: '(min-width: 1199px) 1300px, 100%',
+        srcSet: '/images/projects/nav-600.png 620w, /images/projects/nav-1100.png 1100w, /images/projects/nav-1900.png 1900w'
       }
     ],
     width: '1300',
@@ -170,16 +170,16 @@ export const projects = [
       {
         type: 'image/webp',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/designer-search-600.webp 600w, /images/projects/designer-search-1100.webp 1100w'
+        srcSet: '/images/projects/designer-search-600.webp 620w, /images/projects/designer-search-1100.webp 1100w, /images/projects/designer-search-1400.webp 1400w'
       },
       {
-        type: 'image/png',
+        type: 'image/jpg',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/designer-search-600.png 600w, /images/projects/designer-search-1100.png 1100w'
+        srcSet: '/images/projects/designer-search-600.png 620w, /images/projects/designer-search-1100.png 1100w, /images/projects/designer-search-1400.png 1400w'
       }
     ],
-    width: '605',
-    height: '405',
+    width: '618',
+    height: '408',
     src: '/images/projects/designer-search-600.png'
   },
   {
@@ -202,16 +202,16 @@ export const projects = [
       {
         type: 'image/webp',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/job-board-600.webp 600w, /images/projects/job-board-1100.webp 1100w'
+        srcSet: '/images/projects/job-board-600.webp 620w, /images/projects/job-board-1100.webp 1100w, /images/projects/job-board-1400.webp 1400w'
       },
       {
-        type: 'image/png',
+        type: 'image/jpg',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/job-board-600.png 600w, /images/projects/job-board-1100.png 1100w'
+        srcSet: '/images/projects/job-board-600.png 620w, /images/projects/job-board-1100.png 1100w, /images/projects/job-board-1400.png 1400w'
       }
     ],
-    width: '605',
-    height: '405',
+    width: '618',
+    height: '408',
     src: '/images/projects/job-board-600.png'
   },
   {
@@ -226,7 +226,7 @@ export const projects = [
       },
       {
         title: 'Eventbrite',
-        description: 'I set up Eventbrite as an intermediary way of collecting payments well we build our own purchase funnel.'
+        description: 'I set up Eventbrite as an intermediary way of collecting payments while we build our own purchase funnel.'
       },
       {
         title: 'Workshop pages',
@@ -237,16 +237,16 @@ export const projects = [
       {
         type: 'image/webp',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/learn-600.webp 600w, /images/projects/learn-1100.webp 1100w'
+        srcSet: '/images/projects/learn-600.webp 620w, /images/projects/learn-1100.webp 1100w, /images/projects/learn-1400.webp 1400w'
       },
       {
-        type: 'image/png',
+        type: 'image/jpg',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/learn-600.png 600w, /images/projects/learn-1100.png 1100w'
+        srcSet: '/images/projects/learn-600.png 620w, /images/projects/learn-1100.png 1100w, /images/projects/learn-1400.png 1400w'
       }
     ],
-    width: '605',
-    height: '405',
+    width: '618',
+    height: '408',
     src: '/images/projects/learn-600.png'
   },
   {
@@ -269,16 +269,16 @@ export const projects = [
       {
         type: 'image/webp',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/login-600.webp 600w, /images/projects/login-1100.webp 1100w'
+        srcSet: '/images/projects/login-600.webp 620w, /images/projects/login-1100.webp 1100w, /images/projects/login-1400.webp 1400w'
       },
       {
-        type: 'image/png',
+        type: 'image/jpg',
         sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/login-600.png 600w, /images/projects/login-1100.png 1100w'
+        srcSet: '/images/projects/login-600.png 620w, /images/projects/login-1100.png 1100w, /images/projects/login-1400.png 1400w'
       }
     ],
-    width: '605',
-    height: '405',
+    width: '618',
+    height: '408',
     src: '/images/projects/login-600.png'
   },
 ];

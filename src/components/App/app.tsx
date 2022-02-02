@@ -11,12 +11,12 @@ import styles from "./App.module.scss";
 
 function App() {
   const headerImageSources = [
-    {
-      type: 'image/webp',
-      media: '(min-width: 768px)',
-      srcSet: '/images/header/regan-little-900.webp 900w, /images/header/regan-little-1800.webp 1800w',
-      sizes: '(max-width: 1199px) 650px, 900px'
-    },
+    // {
+    //   type: 'image/webp',
+    //   media: '(min-width: 768px)',
+    //   srcSet: '/images/header/regan-little-900.webp 900w, /images/header/regan-little-1800.webp 1800w',
+    //   sizes: '(max-width: 1199px) 650px, 900px'
+    // },
     {
       type: 'image/png',
       media: '(min-width: 768px)',
@@ -78,43 +78,43 @@ function App() {
           <h2 className={`section-padding ${styles.sectionTitle}`}>Achievements</h2>
           <Projects />
         </section>
-
-        <section id="contact" className={styles.contact}>
-          <h2>Interested in learning more?</h2>
-          <p className={styles.subTitle}>I'd love to hear from you</p>
-          <ul className={styles.socialsList}>
-            <li>
-              <a
-                href="https://github.com/reganperkins"
-                className={styles.socialLink}
-              >
-                <GithubIcon />
-                <span>Github</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="www.linkedin.com/in/reganlittle"
-                className={styles.socialLink}
-              >
-                <LinkedinIcon />
-                <span>LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.dropbox.com/s/hnlkozxe6mq5ogm/_Regan%20Little%202021%20resume.pdf?dl=0"
-                className={styles.socialLink}
-              >
-                <ResumeIcon />
-                <span>Resume</span>
-              </a>
-            </li>
-          </ul>
-          <a className="font-body" href="mailto:reganllittle@gmail.com">reganllittle@gmail.com</a>
-          <a className="font-body" href="tel:+1-604-992-7526">(604) 992-7526</a>
-        </section>
       </main>
+
+      <section id="contact" className={styles.contact}>
+        <h2>Interested in learning more?</h2>
+        <p className={styles.subTitle}>I'd love to hear from you</p>
+        <ul className={styles.socialsList}>
+          <li>
+            <a
+              href="https://github.com/reganperkins"
+              className={styles.socialLink}
+            >
+              <GithubIcon />
+              <span>Github</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="www.linkedin.com/in/reganlittle"
+              className={styles.socialLink}
+            >
+              <LinkedinIcon />
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.dropbox.com/s/hnlkozxe6mq5ogm/_Regan%20Little%202021%20resume.pdf?dl=0"
+              className={styles.socialLink}
+            >
+              <ResumeIcon />
+              <span>Resume</span>
+            </a>
+          </li>
+        </ul>
+        <a className="font-body" href="mailto:reganllittle@gmail.com">reganllittle@gmail.com</a>
+        <a className="font-body" href="tel:+1-604-992-7526">(604) 992-7526</a>
+      </section>
     </React.Fragment>
   );
 }

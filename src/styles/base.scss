@@ -130,4 +130,8 @@ p,
   @media screen and (min-width: $breakpoint800) {
     margin: 24px 48px;
   }
+
+  @media screen and (min-width: $maxContainerWidth) {
+    margin: 24px auto;
+  }
 }
