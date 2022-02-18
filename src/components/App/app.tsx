@@ -11,12 +11,12 @@ import styles from "./App.module.scss";
 
 function App() {
   const headerImageSources = [
-    // {
-    //   type: 'image/webp',
-    //   media: '(min-width: 768px)',
-    //   srcSet: '/images/header/regan-little-900.webp 900w, /images/header/regan-little-1800.webp 1800w',
-    //   sizes: '(max-width: 1199px) 650px, 900px'
-    // },
+    {
+      type: 'image/webp',
+      media: '(min-width: 768px)',
+      srcSet: '/images/header/regan-little-900.webp 900w, /images/header/regan-little-1800.webp 1800w',
+      sizes: '(max-width: 1199px) 650px, 900px'
+    },
     {
       type: 'image/png',
       media: '(min-width: 768px)',

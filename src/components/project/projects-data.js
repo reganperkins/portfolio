@@ -56,13 +56,13 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/dribbble-600.webp 620w, /images/projects/dribbble-1100.webp 1100w, /images/projects/dribbble-1400.webp 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/dribbble-618.webp 618w, /images/projects/dribbble-1100.webp 1100w, /images/projects/dribbble-1400.webp 1400w'
       },
       {
         type: 'image/jpg',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/dribbble-600.png 620w, /images/projects/dribbble-1100.png 1100w, /images/projects/dribbble-1400.png 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/dribbble-618.png 618w, /images/projects/dribbble-1100.png 1100w, /images/projects/dribbble-1400.png 1400w'
       }
     ],
     width: '618',
@@ -169,13 +169,13 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/designer-search-600.webp 620w, /images/projects/designer-search-1100.webp 1100w, /images/projects/designer-search-1400.webp 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/designer-search-618.webp 618w, /images/projects/designer-search-1100.webp 1100w, /images/projects/designer-search-1400.webp 1400w'
       },
       {
         type: 'image/jpg',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/designer-search-600.png 620w, /images/projects/designer-search-1100.png 1100w, /images/projects/designer-search-1400.png 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/designer-search-618.png 618w, /images/projects/designer-search-1100.png 1100w, /images/projects/designer-search-1400.png 1400w'
       }
     ],
     width: '618',
