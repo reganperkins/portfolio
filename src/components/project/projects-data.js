@@ -23,20 +23,20 @@ export const projects = [
       },
     ],
     sources: [
-      // {
-      //   type: 'image/webp',
-      //   sizes: '(min-width: 1199px) 600px, 100%',
-      //   srcSet: '/images/projects/modernize-600.webp 620w, /images/projects/modernize-1100.webp 1100w, /images/projects/modernize-1400.webp 1400w'
-      // },
+      {
+        type: 'image/webp',
+        sizes: '(min-width: 1199px) 218px, 100%',
+        srcSet: '/images/projects/modernize-218.webp 618w, /images/projects/modernize-1100.webp 1100w, /images/projects/modernize-1400.webp 1400w'
+      },
       {
         type: 'image/jpg',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/modernize-600.png 620w, /images/projects/modernize-1100.png 1100w, /images/projects/modernize-1400.png 1400w'
+        sizes: '(min-width: 1199px) 218px, 100%',
+        srcSet: '/images/projects/modernize-218.png 618w, /images/projects/modernize-1100.png 1100w, /images/projects/modernize-1400.png 1400w'
       }
     ],
     width: '618',
     height: '408',
-    src: '/images/projects/modernize-600.png'
+    src: '/images/projects/modernize-618.png'
   },
   {
     id: 'Dribbble',
@@ -67,7 +67,7 @@ export const projects = [
     ],
     width: '618',
     height: '408',
-    src: '/images/projects/dribbble-600.png'
+    src: '/images/projects/dribbble-618.png'
   },
   {
     id: 'Marketplace',
@@ -95,18 +95,18 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/marketplace-600.webp 620w, /images/projects/marketplace-1100.webp 1100w, /images/projects/marketplace-1400.webp 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/marketplace-618.webp 618w, /images/projects/marketplace-1100.webp 1100w, /images/projects/marketplace-1400.webp 1400w'
       },
       {
         type: 'image/jpg',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/marketplace-600.png 620w, /images/projects/marketplace-1100.png 1100w, /images/projects/marketplace-1400.png 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/marketplace-618.png 618w, /images/projects/marketplace-1100.png 1100w, /images/projects/marketplace-1400.png 1400w'
       }
     ],
     width: '618',
     height: '408',
-    src: '/images/projects/marketplace-600.png'
+    src: '/images/projects/marketplace-618.png'
   },
   {
     id: 'Navigation',
@@ -131,7 +131,7 @@ export const projects = [
       {
         type: 'image/webp',
         sizes: '(min-width: 1199px) 1300px, 100%',
-        srcSet: '/images/projects/nav-600.webp 620w, /images/projects/nav-1100.webp 1100w, /images/projects/nav-1900.webp 1900w'
+        srcSet: '/images/projects/nav18.webp 620w, /images/projects/nav-1100.webp 1100w, /images/projects/nav-1900.webp 1900w'
       },
       {
         type: 'image/jpg',
@@ -180,7 +180,7 @@ export const projects = [
     ],
     width: '618',
     height: '408',
-    src: '/images/projects/designer-search-600.png'
+    src: '/images/projects/designer-search-618.png'
   },
   {
     id: 'Job',
@@ -201,18 +201,18 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/job-board-600.webp 620w, /images/projects/job-board-1100.webp 1100w, /images/projects/job-board-1400.webp 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/job-board-618.webp 618w, /images/projects/job-board-1100.webp 1100w, /images/projects/job-board-1400.webp 1400w'
       },
       {
         type: 'image/jpg',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/job-board-600.png 620w, /images/projects/job-board-1100.png 1100w, /images/projects/job-board-1400.png 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/job-board-618.png 618w, /images/projects/job-board-1100.png 1100w, /images/projects/job-board-1400.png 1400w'
       }
     ],
     width: '618',
     height: '408',
-    src: '/images/projects/job-board-600.png'
+    src: '/images/projects/job-board-618.png'
   },
   {
     id: 'Workshops',
@@ -236,18 +236,18 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/learn-600.webp 620w, /images/projects/learn-1100.webp 1100w, /images/projects/learn-1400.webp 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/learn-618.webp 618w, /images/projects/learn-1100.webp 1100w, /images/projects/learn-1400.webp 1400w'
       },
       {
         type: 'image/jpg',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/learn-600.png 620w, /images/projects/learn-1100.png 1100w, /images/projects/learn-1400.png 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/learn-618.png 618w, /images/projects/learn-1100.png 1100w, /images/projects/learn-1400.png 1400w'
       }
     ],
     width: '618',
     height: '408',
-    src: '/images/projects/learn-600.png'
+    src: '/images/projects/learn-618.png'
   },
   {
     id: 'Login',
@@ -268,18 +268,18 @@ export const projects = [
     sources: [
       {
         type: 'image/webp',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/login-600.webp 620w, /images/projects/login-1100.webp 1100w, /images/projects/login-1400.webp 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/login-618.webp 618w, /images/projects/login-1100.webp 1100w, /images/projects/login-1400.webp 1400w'
       },
       {
         type: 'image/jpg',
-        sizes: '(min-width: 1199px) 600px, 100%',
-        srcSet: '/images/projects/login-600.png 620w, /images/projects/login-1100.png 1100w, /images/projects/login-1400.png 1400w'
+        sizes: '(min-width: 1199px) 618px, 100%',
+        srcSet: '/images/projects/login-618.png 618w, /images/projects/login-1100.png 1100w, /images/projects/login-1400.png 1400w'
       }
     ],
     width: '618',
     height: '408',
-    src: '/images/projects/login-600.png'
+    src: '/images/projects/login-618.png'
   },
 ];
 
