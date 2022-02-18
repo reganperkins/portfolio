@@ -76,8 +76,10 @@
   display: flex;
   flex-direction: column-reverse;
 
-  .project-display {
+  .project-display,
+  img {
     width: 100%;
+    max-width: 100%;
   }
 
   .project-grid {

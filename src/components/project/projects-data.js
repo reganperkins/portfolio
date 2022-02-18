@@ -26,12 +26,12 @@ export const projects = [
       {
         type: 'image/webp',
         sizes: '(min-width: 1199px) 218px, 100%',
-        srcSet: '/images/projects/modernize-218.webp 618w, /images/projects/modernize-1100.webp 1100w, /images/projects/modernize-1400.webp 1400w'
+        srcSet: '/images/projects/modernize-618.webp 618w, /images/projects/modernize-1100.webp 1100w, /images/projects/modernize-1400.webp 1400w'
       },
       {
         type: 'image/jpg',
         sizes: '(min-width: 1199px) 218px, 100%',
-        srcSet: '/images/projects/modernize-218.png 618w, /images/projects/modernize-1100.png 1100w, /images/projects/modernize-1400.png 1400w'
+        srcSet: '/images/projects/modernize-618.png 618w, /images/projects/modernize-1100.png 1100w, /images/projects/modernize-1400.png 1400w'
       }
     ],
     width: '618',
@@ -141,7 +141,7 @@ export const projects = [
     ],
     width: '1300',
     height: '437',
-    src: '/images/projects/nav-600.png'
+    src: '/images/projects/nav-1100.png'
   },
   {
     id: 'Search',

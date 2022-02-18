@@ -42,6 +42,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 64px;
+  max-width: 700px;
 
   @media screen and (min-width: $breakpoint1200) {
     min-width: 550px;
