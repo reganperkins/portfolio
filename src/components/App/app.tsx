@@ -104,7 +104,7 @@ function App() {
           </li>
           <li>
             <a
-              href="https://www.dropbox.com/s/hnlkozxe6mq5ogm/_Regan%20Little%202021%20resume.pdf?dl=0"
+              href="https://www.dropbox.com/s/hoaamzn8k4nu9qw/Regan%20Little%202022%20resume.pdf?dl=0"
               className={styles.socialLink}
             >
               <ResumeIcon />
@@ -113,7 +113,6 @@ function App() {
           </li>
         </ul>
         <a className="font-body" href="mailto:reganllittle@gmail.com">reganllittle@gmail.com</a>
-        <a className="font-body" href="tel:+1-604-992-7526">(604) 992-7526</a>
       </section>
     </React.Fragment>
   );
